@@ -12,3 +12,5 @@ export type { BeginObservationButtonProps } from "./BeginObservationButton";
 
 export { LayoutContainer } from "./LayoutContainer";
 export type { LayoutContainerProps } from "./LayoutContainer";
+
+export { ContentPage } from "./ContentPage";
