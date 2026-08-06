@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 import {
   BeginObservationButton,
   ExperienceState,
+  LayoutContainer,
   LogoReveal,
 } from "@/components/ui";
-import { LayoutContainer } from "@/components/ui";
 
 export default function HomePage() {
   const router = useRouter();
