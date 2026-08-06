@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useCallback, useEffect, useState } from "react";
+import { type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { reducedMotionVariants } from "@/lib/motion/variants";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";

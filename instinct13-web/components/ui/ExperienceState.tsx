@@ -48,19 +48,6 @@ export interface ExperienceStateProps {
   className?: string;
 }
 
-const stateRenderers: Record<
-  HomepageState,
-  keyof Pick<
-    ExperienceStateProps,
-    "renderState0" | "renderState1" | "renderState2" | "renderState3"
-  >
-> = {
-  0: "renderState0",
-  1: "renderState1",
-  2: "renderState2",
-  3: "renderState3",
-};
-
 /**
  * Get the next state in the sequence.
  * State 3 is terminal (sequence complete).
