@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const CONTACT_TO = "contact@instinct13.com";
+const CONTACT_FROM = "Instinct13 Contact <contact@instinct13.com>";
+const CONTACT_TO = "fortini.thamer@gmail.com";
 const TURNSTILE_VERIFY_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
@@ -46,12 +47,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { name, email, message, turnstileToken } = body as Record<string, unknown>;
+  const { name, email, subject, message, turnstileToken } = body as Record<string, unknown>;
 
   // --- Input validation ---
   if (
     typeof name !== "string" ||
     typeof email !== "string" ||
+    typeof subject !== "string" ||
     typeof message !== "string" ||
     typeof turnstileToken !== "string"
   ) {
@@ -63,6 +65,7 @@ export async function POST(request: NextRequest) {
 
   const nameTrimmed = name.trim();
   const emailTrimmed = email.trim().toLowerCase();
+  const subjectTrimmed = subject.trim();
   const messageTrimmed = message.trim();
 
   if (!nameTrimmed || nameTrimmed.length > 100) {
@@ -89,6 +92,13 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  if (!subjectTrimmed || subjectTrimmed.length > 150) {
+    return NextResponse.json(
+      { error: "Subject must be between 1 and 150 characters." },
+      { status: 400 },
+    );
+  }
+
   if (!messageTrimmed || messageTrimmed.length > 5000) {
     return NextResponse.json(
       { error: "Message must be between 1 and 5000 characters." },
@@ -107,14 +117,15 @@ export async function POST(request: NextRequest) {
 
   // --- Send email via Resend ---
   const { error } = await resend.emails.send({
-    from: "Instinct 13 Contact <noreply@instinct13.com>",
+    from: CONTACT_FROM,
     to: CONTACT_TO,
     replyTo: emailTrimmed,
-    subject: `New contact message from ${nameTrimmed}`,
-    text: `Name: ${nameTrimmed}\nEmail: ${emailTrimmed}\n\n${messageTrimmed}`,
+    subject: `[Instinct13] ${subjectTrimmed}`,
+    text: `Name: ${nameTrimmed}\nEmail: ${emailTrimmed}\nSubject: ${subjectTrimmed}\n\n${messageTrimmed}`,
     html: `
       <p><strong>Name:</strong> ${escapeHtml(nameTrimmed)}</p>
       <p><strong>Email:</strong> ${escapeHtml(emailTrimmed)}</p>
+      <p><strong>Subject:</strong> ${escapeHtml(subjectTrimmed)}</p>
       <hr />
       <p>${escapeHtml(messageTrimmed).replace(/\n/g, "<br />")}</p>
     `,

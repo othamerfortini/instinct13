@@ -29,6 +29,7 @@ export function ContactForm() {
     const data = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement)
         .value,
       turnstileToken,
@@ -128,6 +129,32 @@ export function ContactForm() {
             "disabled:opacity-50",
           )}
           placeholder="you@example.com"
+        />
+      </div>
+
+      {/* Subject */}
+      <div className="space-y-2">
+        <label
+          htmlFor="subject"
+          className="block text-sm font-medium text-neutral-300"
+        >
+          Subject
+        </label>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          required
+          maxLength={150}
+          disabled={isLoading}
+          className={clsx(
+            "w-full rounded-md border bg-white/5 px-4 py-3",
+            "text-sm text-neutral-200 placeholder-neutral-600",
+            "border-white/10 focus:border-white/30 focus:outline-none",
+            "transition-colors duration-150",
+            "disabled:opacity-50",
+          )}
+          placeholder="Subject"
         />
       </div>
 
