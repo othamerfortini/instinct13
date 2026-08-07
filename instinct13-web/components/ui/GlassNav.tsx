@@ -79,7 +79,7 @@ export function GlassNav({ visible = true }: GlassNavProps) {
                     "transition-all duration-200",
                     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60",
                     isActive
-                      ? "bg-white/8 text-white"
+                      ? "bg-white/10 text-white"
                       : "text-neutral-400 hover:bg-white/5 hover:text-white",
                   ].join(" ")}
                 >
@@ -87,7 +87,7 @@ export function GlassNav({ visible = true }: GlassNavProps) {
                   {isActive && (
                     <motion.span
                       layoutId="nav-active-pill"
-                      className="absolute inset-0 rounded-xl bg-white/8"
+                      className="absolute inset-0 rounded-xl bg-white/10"
                       style={{ zIndex: -1 }}
                       transition={{ type: "spring", stiffness: 400, damping: 35 }}
                     />
