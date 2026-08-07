@@ -55,8 +55,17 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(emailTrimmed) || emailTrimmed.length > 254) {
+  const atIdx = emailTrimmed.indexOf("@");
+  const domainPart = emailTrimmed.slice(atIdx + 1);
+  const isValidEmail =
+    atIdx > 0 &&
+    atIdx === emailTrimmed.lastIndexOf("@") &&
+    domainPart.includes(".") &&
+    !domainPart.startsWith(".") &&
+    !domainPart.endsWith(".") &&
+    emailTrimmed.length <= 254 &&
+    !/\s/.test(emailTrimmed);
+  if (!isValidEmail) {
     return NextResponse.json(
       { error: "Please provide a valid email address." },
       { status: 400 },
