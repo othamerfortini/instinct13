@@ -1,19 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-const TURNSTILE_SECRET = process.env.TURNSTILE_SECRET_KEY ?? "";
 const CONTACT_TO = "contact@instinct13.com";
 const TURNSTILE_VERIFY_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
+function escapeHtml(str: string) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 async function verifyTurnstile(token: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY ?? "";
   const res = await fetch(TURNSTILE_VERIFY_URL, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
-      secret: TURNSTILE_SECRET,
+      secret,
       response: token,
     }),
   });
@@ -22,6 +29,16 @@ async function verifyTurnstile(token: string): Promise<boolean> {
 }
 
 export async function POST(request: NextRequest) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("RESEND_API_KEY is not configured.");
+    return NextResponse.json(
+      { error: "Email service is not configured." },
+      { status: 500 },
+    );
+  }
+  const resend = new Resend(apiKey);
+
   let body: unknown;
   try {
     body = await request.json();
@@ -89,15 +106,6 @@ export async function POST(request: NextRequest) {
   }
 
   // --- Send email via Resend ---
-  function escapeHtml(str: string) {
-    return str
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
-  }
-
   const { error } = await resend.emails.send({
     from: "Instinct 13 Contact <noreply@instinct13.com>",
     to: CONTACT_TO,
