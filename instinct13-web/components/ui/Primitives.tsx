@@ -1,10 +1,16 @@
-import { type ReactNode } from "react";
+"use client";
+
+import { type ReactNode, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { clsx } from "clsx";
+import { fadeUpVariants, lineVariants } from "@/lib/motion/text";
+import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
 
 /**
  * Section
  *
- * Reusable section wrapper with consistent vertical spacing and optional border.
+ * Reusable section wrapper with consistent vertical spacing and
+ * scroll-triggered fade-up reveal.
  */
 
 export interface SectionProps {
@@ -14,8 +20,19 @@ export interface SectionProps {
 }
 
 export function Section({ children, className, bordered }: SectionProps) {
+  const ref = useRef<HTMLElement | null>(null);
+  const prefersReduced = usePrefersReducedMotion();
+  const isInView = useInView(ref as React.RefObject<Element>, {
+    once: true,
+    amount: 0.12,
+  });
+
   return (
-    <section
+    <motion.section
+      ref={ref as React.RefObject<HTMLElement>}
+      variants={prefersReduced ? {} : fadeUpVariants}
+      initial={prefersReduced ? "visible" : "hidden"}
+      animate={isInView || prefersReduced ? "visible" : "hidden"}
       className={clsx(
         "space-y-4",
         bordered && "border-t border-white/5 pt-8",
@@ -23,14 +40,14 @@ export function Section({ children, className, bordered }: SectionProps) {
       )}
     >
       {children}
-    </section>
+    </motion.section>
   );
 }
 
 /**
  * SectionHeading
  *
- * Consistent h2 styling for content page sections.
+ * Consistent h2 with a decorative expanding line beneath it.
  */
 
 export interface SectionHeadingProps {
@@ -39,15 +56,31 @@ export interface SectionHeadingProps {
 }
 
 export function SectionHeading({ children, className }: SectionHeadingProps) {
+  const ref = useRef<HTMLHeadingElement | null>(null);
+  const prefersReduced = usePrefersReducedMotion();
+  const isInView = useInView(ref as React.RefObject<Element>, {
+    once: true,
+    amount: 0.5,
+  });
+
   return (
-    <h2
-      className={clsx(
-        "text-lg font-semibold tracking-wide text-neutral-200",
-        className,
-      )}
-    >
-      {children}
-    </h2>
+    <div className="space-y-2">
+      <h2
+        ref={ref}
+        className={clsx(
+          "text-lg font-semibold tracking-wide text-neutral-200",
+          className,
+        )}
+      >
+        {children}
+      </h2>
+      <motion.div
+        variants={prefersReduced ? {} : lineVariants}
+        initial={prefersReduced ? "visible" : "hidden"}
+        animate={isInView || prefersReduced ? "visible" : "hidden"}
+        className="h-px w-12 bg-white/15"
+      />
+    </div>
   );
 }
 
@@ -73,7 +106,7 @@ export function BodyText({ children, className }: BodyTextProps) {
 /**
  * PremiumLink
  *
- * Styled anchor with arrow indicator for inline navigation.
+ * Styled anchor with hover underline grow effect.
  */
 
 export interface PremiumLinkProps {
@@ -96,14 +129,18 @@ export function PremiumLink({
         ? { target: "_blank", rel: "noopener noreferrer" }
         : {})}
       className={clsx(
-        "inline-block text-sm font-medium text-neutral-300",
-        "underline-offset-4 hover:text-white hover:underline",
-        "transition-colors duration-150",
+        "group inline-block text-sm font-medium text-neutral-300",
+        "transition-colors duration-150 hover:text-white",
         "focus-visible:outline-2 focus-visible:outline-offset-2",
+        "relative",
         className,
       )}
     >
-      {children}
+      <span className="relative">
+        {children}
+        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-white/60 transition-all duration-300 group-hover:w-full" />
+      </span>
     </a>
   );
 }
+

@@ -32,3 +32,9 @@ export type {
   BodyTextProps,
   PremiumLinkProps,
 } from "./Primitives";
+
+export { AmbientCanvas } from "./AmbientCanvas";
+export { AnimatedBackground } from "./AnimatedBackground";
+export { CustomCursor } from "./CustomCursor";
+export { PageLoader } from "./PageLoader";
+
