@@ -124,7 +124,7 @@ export function GlassNav({ visible = true }: GlassNavProps) {
         aria-label="Primary navigation"
         className={[
           "glass mx-4 mt-4 rounded-2xl sm:mx-6 lg:mx-8",
-          "transition-all duration-300",
+          "transition-[padding] duration-300",
           scrolled ? "py-1" : "",
         ].join(" ")}
       >

@@ -27,7 +27,7 @@ interface Particle {
   pulseSpeed: number;
 }
 
-const PARTICLE_COUNT = 60;
+const PARTICLE_COUNT = 60; // O(n²) connection check; keep ≤ 80 for smooth 60 fps
 const CONNECTION_DISTANCE = 140;
 const PARTICLE_OPACITY_BASE = 0.18;
 const LINE_OPACITY_BASE = 0.06;

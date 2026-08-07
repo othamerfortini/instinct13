@@ -15,7 +15,7 @@ import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion
  * - Respects prefers-reduced-motion (immediate dismiss).
  * - Blocks scroll during display via `overflow: hidden` on body.
  *
- * Usage: Render once in RootLayout. It self-dismisses after ~1.2 s.
+ * Usage: Render once in RootLayout. It self-dismisses after ~1.1 s.
  */
 
 const DISMISS_DELAY = 1100;

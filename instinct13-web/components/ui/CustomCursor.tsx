@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useEffect } from "react";
+import { motion, useMotionValue, useSpring, useAnimate } from "framer-motion";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
 
 /**
@@ -30,8 +30,7 @@ export function CustomCursor() {
   const ringX = useSpring(mouseX, { stiffness: 100, damping: 20, mass: 0.8 });
   const ringY = useSpring(mouseY, { stiffness: 100, damping: 20, mass: 0.8 });
 
-  const isHovering = useRef(false);
-  const ringRef = useRef<HTMLDivElement>(null);
+  const [ringScope, animateRing] = useAnimate();
 
   useEffect(() => {
     // Only on pointer:fine (mouse/trackpad) — not touch
@@ -43,20 +42,24 @@ export function CustomCursor() {
       mouseY.set(e.clientY);
     }
 
+    let isHovering = false;
+
     function onOver(e: PointerEvent) {
       const target = e.target as HTMLElement;
       const interactive = target.closest(
         "a, button, [role='button'], input, textarea, select, label",
       );
       const next = !!interactive;
-      if (next !== isHovering.current) {
-        isHovering.current = next;
-        if (ringRef.current) {
-          ringRef.current.style.width = next ? "48px" : "28px";
-          ringRef.current.style.height = next ? "48px" : "28px";
-          ringRef.current.style.borderColor = next
-            ? "rgba(255,255,255,0.7)"
-            : "rgba(255,255,255,0.35)";
+      if (next !== isHovering) {
+        isHovering = next;
+        if (ringScope.current) {
+          void animateRing(
+            ringScope.current,
+            next
+              ? { width: 48, height: 48, borderColor: "rgba(255,255,255,0.7)" }
+              : { width: 28, height: 28, borderColor: "rgba(255,255,255,0.35)" },
+            { duration: 0.2, ease: "easeOut" },
+          );
         }
       }
     }
@@ -68,7 +71,7 @@ export function CustomCursor() {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerover", onOver);
     };
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, animateRing, ringScope]);
 
   if (prefersReduced) return null;
 
@@ -76,7 +79,7 @@ export function CustomCursor() {
     <>
       {/* Outer ring — slow lag */}
       <motion.div
-        ref={ringRef}
+        ref={ringScope}
         aria-hidden="true"
         className="pointer-events-none fixed z-[9999] rounded-full border border-white/35"
         style={{
@@ -86,7 +89,6 @@ export function CustomCursor() {
           height: 28,
           translateX: "-50%",
           translateY: "-50%",
-          transition: "width 0.25s ease, height 0.25s ease, border-color 0.2s ease",
         }}
       />
 
