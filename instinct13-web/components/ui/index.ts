@@ -23,6 +23,8 @@ export { Footer } from "./Footer";
 export { PageTransition } from "./PageTransition";
 export type { PageTransitionProps } from "./PageTransition";
 
+export { ContactForm } from "./ContactForm";
+
 export { Section, SectionHeading, BodyText, PremiumLink } from "./Primitives";
 export type {
   SectionProps,

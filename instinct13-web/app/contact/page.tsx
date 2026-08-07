@@ -5,6 +5,7 @@ import {
   SectionHeading,
   BodyText,
   PremiumLink,
+  ContactForm,
 } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -23,10 +24,10 @@ export default function ContactPage() {
         <Section>
           <SectionHeading>Get in Touch</SectionHeading>
           <BodyText>
-            Instinct 13 is in active development. Official contact channels will
-            be published here as the project advances through its validation
-            phases.
+            Have a question or want to connect? Send us a message and we&apos;ll
+            get back to you.
           </BodyText>
+          <ContactForm />
         </Section>
 
         <Section>
