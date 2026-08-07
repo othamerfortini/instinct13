@@ -80,6 +80,15 @@ export async function POST(request: NextRequest) {
   }
 
   // --- Send email via Resend ---
+  function escapeHtml(str: string) {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   const { error } = await resend.emails.send({
     from: "Instinct 13 Contact <noreply@instinct13.com>",
     to: CONTACT_TO,
@@ -87,10 +96,10 @@ export async function POST(request: NextRequest) {
     subject: `New contact message from ${nameTrimmed}`,
     text: `Name: ${nameTrimmed}\nEmail: ${emailTrimmed}\n\n${messageTrimmed}`,
     html: `
-      <p><strong>Name:</strong> ${nameTrimmed}</p>
-      <p><strong>Email:</strong> ${emailTrimmed}</p>
+      <p><strong>Name:</strong> ${escapeHtml(nameTrimmed)}</p>
+      <p><strong>Email:</strong> ${escapeHtml(emailTrimmed)}</p>
       <hr />
-      <p>${messageTrimmed.replace(/\n/g, "<br />")}</p>
+      <p>${escapeHtml(messageTrimmed).replace(/\n/g, "<br />")}</p>
     `,
   });
 
