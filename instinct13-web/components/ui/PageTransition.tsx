@@ -7,11 +7,11 @@ import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion
 /**
  * PageTransition
  *
- * Wraps page content with a smooth Framer Motion fade+slide entry.
- * Use in content pages for consistent route-to-route transitions.
+ * Wraps page content with a cinematic entry: fade + upward motion with
+ * a staggered child reveal for sections.
  *
  * - Respects prefers-reduced-motion.
- * - Lightweight: no exit animation (Next.js App Router handles routing).
+ * - Uses custom cubic-bezier matching the design's premium motion language.
  */
 
 export interface PageTransitionProps {
@@ -19,12 +19,19 @@ export interface PageTransitionProps {
   className?: string;
 }
 
+const PAGE_EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
+
 const pageVariants = {
-  initial: { opacity: 0, y: 8 },
+  initial: { opacity: 0, y: 20 },
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.45, ease: [0.4, 0, 0.2, 1] },
+    transition: {
+      duration: 0.6,
+      ease: PAGE_EASE,
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
   },
 };
 
@@ -48,3 +55,4 @@ export function PageTransition({ children, className }: PageTransitionProps) {
     </motion.div>
   );
 }
+

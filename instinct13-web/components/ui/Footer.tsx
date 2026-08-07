@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
+import { staggerContainerVariants, scrollRevealVariants } from "@/lib/motion/scroll";
 
 /**
  * Footer
  *
  * Premium modern footer for the Instinct 13 website.
  *
+ * - Staggered scroll-triggered reveal for brand and nav.
  * - Minimal, elegant layout matching the brand tone.
  * - Responsive: stacks on mobile, horizontal on desktop.
  * - Accessible: proper landmarks and link labels.
@@ -22,33 +24,27 @@ const FOOTER_LINKS = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
-const footerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const reducedFooterVariants = {
-  hidden: { opacity: 1 },
-  visible: { opacity: 1 },
-};
-
 export function Footer() {
   const prefersReducedMotion = usePrefersReducedMotion();
-  const variants = prefersReducedMotion ? reducedFooterVariants : footerVariants;
 
   return (
-    <motion.footer
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+    <footer
       className="relative z-10 mt-auto border-t border-white/5"
       role="contentinfo"
     >
-      <div className="mx-auto max-w-5xl px-6 py-12 sm:px-8 lg:px-10">
+      <motion.div
+        variants={prefersReducedMotion ? {} : staggerContainerVariants}
+        initial={prefersReducedMotion ? "visible" : "hidden"}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.15 }}
+        className="mx-auto max-w-5xl px-6 py-12 sm:px-8 lg:px-10"
+      >
         <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
           {/* Brand */}
-          <div className="space-y-1">
+          <motion.div
+            variants={prefersReducedMotion ? {} : scrollRevealVariants}
+            className="space-y-1"
+          >
             <Link
               href="/"
               aria-label="Instinct 13 — Home"
@@ -59,10 +55,13 @@ export function Footer() {
             <p className="text-xs text-neutral-600">
               An operating system for understanding human behavior.
             </p>
-          </div>
+          </motion.div>
 
           {/* Nav links */}
-          <nav aria-label="Footer navigation">
+          <motion.nav
+            variants={prefersReducedMotion ? {} : scrollRevealVariants}
+            aria-label="Footer navigation"
+          >
             <ul className="flex flex-wrap gap-x-6 gap-y-2">
               {FOOTER_LINKS.map((link) => (
                 <li key={link.href}>
@@ -75,19 +74,23 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </nav>
+          </motion.nav>
         </div>
 
         {/* Bottom row */}
-        <div className="mt-10 flex flex-col items-start gap-2 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <motion.div
+          variants={prefersReducedMotion ? {} : scrollRevealVariants}
+          className="mt-10 flex flex-col items-start gap-2 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between"
+        >
           <p className="text-xs text-neutral-700">
             &copy; {new Date().getFullYear()} Instinct 13. All rights reserved.
           </p>
           <p className="text-xs text-neutral-700">
             Principles are permanent. Manifestations are not.
           </p>
-        </div>
-      </div>
-    </motion.footer>
+        </motion.div>
+      </motion.div>
+    </footer>
   );
 }
+

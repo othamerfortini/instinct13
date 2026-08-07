@@ -71,6 +71,15 @@ body {
   box-sizing: border-box;
 }
 
+/* Hide native cursor — replaced by CustomCursor component on pointer:fine devices */
+@media (pointer: fine) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
+}
+
 /* Subtle noise texture for depth */
 body::before {
   content: "";
