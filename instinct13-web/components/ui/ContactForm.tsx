@@ -3,12 +3,14 @@
 import { useRef, useState } from "react";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { clsx } from "clsx";
+import { useIntent } from "@/components/providers/IntentProvider";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
 
 export function ContactForm() {
+  const { intent, recordContactEngagement } = useIntent();
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [turnstileToken, setTurnstileToken] = useState("");
@@ -78,7 +80,12 @@ export function ContactForm() {
   const isLoading = formState === "loading";
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-6">
+    <form
+      onSubmit={handleSubmit}
+      onFocusCapture={recordContactEngagement}
+      noValidate
+      className="space-y-6"
+    >
       {/* Name */}
       <div className="space-y-2">
         <label
@@ -181,6 +188,7 @@ export function ContactForm() {
           "inline-flex items-center gap-2 rounded-md px-6 py-3",
           "text-sm font-medium text-white",
           "border border-white/20 bg-white/10",
+          intent === "collaborator" && "border-white/35 bg-white/15",
           "hover:bg-white/15 focus-visible:outline-2 focus-visible:outline-offset-2",
           "transition-colors duration-150",
           "disabled:cursor-not-allowed disabled:opacity-50",

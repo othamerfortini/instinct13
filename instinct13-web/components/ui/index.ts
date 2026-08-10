@@ -37,4 +37,5 @@ export { AmbientCanvas } from "./AmbientCanvas";
 export { AnimatedBackground } from "./AnimatedBackground";
 export { CustomCursor } from "./CustomCursor";
 export { PageLoader } from "./PageLoader";
-
+export { AdaptiveExperience } from "./AdaptiveExperience";
+export { AdaptiveContactIntro } from "./AdaptiveContactIntro";
