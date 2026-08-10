@@ -9,6 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "test:intent": "tsc -p tsconfig.intent-tests.json && node --test .intent-test-dist/lib/intent/engine.test.js",
     "prepare": "husky",
     "typecheck": "tsc --noEmit"
   },

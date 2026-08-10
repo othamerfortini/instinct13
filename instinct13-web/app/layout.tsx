@@ -6,6 +6,8 @@ import { AmbientCanvas } from "@/components/ui/AmbientCanvas";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { PageLoader } from "@/components/ui/PageLoader";
+import { IntentProvider } from "@/components/providers/IntentProvider";
+import { AdaptiveExperience } from "@/components/ui/AdaptiveExperience";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,19 +30,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        {/* Cinematic loading screen — exits after ~1.1 s */}
-        <PageLoader />
+        <IntentProvider>
+          {/* Cinematic loading screen — exits after ~1.1 s */}
+          <PageLoader />
 
-        {/* Ambient particle field */}
-        <AmbientCanvas />
+          {/* Ambient particle field */}
+          <AmbientCanvas />
 
-        {/* Cursor-reactive gradient background */}
-        <AnimatedBackground />
+          {/* Cursor-reactive gradient background */}
+          <AnimatedBackground />
 
-        {/* Custom magnetic cursor */}
-        <CustomCursor />
+          <AdaptiveExperience />
 
-        {children}
+          {/* Custom magnetic cursor */}
+          <CustomCursor />
+
+          {children}
+        </IntentProvider>
         <Analytics />
         <SpeedInsights />
       </body>

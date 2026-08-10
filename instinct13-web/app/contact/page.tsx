@@ -6,6 +6,7 @@ import {
   BodyText,
   PremiumLink,
   ContactForm,
+  AdaptiveContactIntro,
 } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -23,10 +24,7 @@ export default function ContactPage() {
       <div className="space-y-10">
         <Section>
           <SectionHeading>Get in Touch</SectionHeading>
-          <BodyText>
-            Have a question or want to connect? Send us a message and we&apos;ll
-            get back to you.
-          </BodyText>
+          <AdaptiveContactIntro />
           <ContactForm />
         </Section>
 

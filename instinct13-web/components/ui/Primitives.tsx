@@ -128,6 +128,7 @@ export function PremiumLink({
       {...(external
         ? { target: "_blank", rel: "noopener noreferrer" }
         : {})}
+      data-intent-premium=""
       className={clsx(
         "group inline-block text-sm font-medium text-neutral-300",
         "transition-colors duration-150 hover:text-white",
@@ -143,4 +144,3 @@ export function PremiumLink({
     </a>
   );
 }
-

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
 import { useMagnetic } from "@/lib/motion/magnetic";
+import { useIntent } from "@/components/providers/IntentProvider";
 
 /**
  * GlassNav
@@ -53,11 +54,13 @@ function MagneticNavLink({
   label,
   isActive,
   reduced,
+  emphasized,
 }: {
   href: string;
   label: string;
   isActive: boolean;
   reduced: boolean;
+  emphasized: boolean;
 }) {
   const { ref, x, y, handleMouseMove, handleMouseLeave } = useMagnetic(8);
 
@@ -80,7 +83,9 @@ function MagneticNavLink({
             "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60",
             isActive
               ? "text-white"
-              : "text-neutral-400 hover:text-white",
+              : emphasized
+                ? "text-neutral-200 hover:text-white"
+                : "text-neutral-400 hover:text-white",
           ].join(" ")}
         >
           {isActive && (
@@ -101,7 +106,9 @@ function MagneticNavLink({
 export function GlassNav({ visible = true }: GlassNavProps) {
   const pathname = usePathname();
   const prefersReducedMotion = usePrefersReducedMotion();
-  const variants = prefersReducedMotion ? reducedNavVariants : navVariants;
+  const { intent } = useIntent();
+  const calmExperience = prefersReducedMotion || intent === "observer";
+  const variants = calmExperience ? reducedNavVariants : navVariants;
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -141,7 +148,8 @@ export function GlassNav({ visible = true }: GlassNavProps) {
                 href={link.href}
                 label={link.label}
                 isActive={isActive}
-                reduced={prefersReducedMotion}
+                reduced={calmExperience}
+                emphasized={intent === "collaborator" && link.href === "/contact"}
               />
             );
           })}
@@ -150,4 +158,3 @@ export function GlassNav({ visible = true }: GlassNavProps) {
     </motion.header>
   );
 }
-
