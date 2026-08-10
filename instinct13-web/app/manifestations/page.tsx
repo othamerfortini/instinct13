@@ -5,6 +5,7 @@ import {
   SectionHeading,
   BodyText,
   PremiumLink,
+  ManifestationReveal,
 } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -16,9 +17,7 @@ export const metadata: Metadata = {
 export default function ManifestationsPage() {
   return (
     <ContentPage>
-      <h1 className="mb-12 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-        Manifestations
-      </h1>
+      <ManifestationReveal />
 
       <div className="space-y-10">
         <Section>
