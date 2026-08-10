@@ -1,9 +1,10 @@
 "use client";
 
 import { useIntent } from "@/components/providers/IntentProvider";
+import { type IntentState } from "@/lib/intent/types";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
 
-const ATMOSPHERE: Record<string, string> = {
+const ATMOSPHERE: Record<IntentState, string> = {
   explorer:
     "bg-[radial-gradient(ellipse_at_68%_28%,rgba(255,255,255,0.045),transparent_58%)]",
   thinker:

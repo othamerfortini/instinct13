@@ -46,6 +46,14 @@ function increment(value: number, amount: number): number {
   return Math.min(1, value + amount);
 }
 
+function signalsMatch(current: IntentSignals, next: IntentSignals): boolean {
+  return Object.keys(current).every(
+    (key) =>
+      current[key as keyof IntentSignals] ===
+      next[key as keyof IntentSignals],
+  );
+}
+
 function snapshotsMatch(
   current: IntentSnapshot,
   next: IntentSnapshot,
@@ -73,14 +81,18 @@ export function IntentProvider({ children }: { children: ReactNode }) {
 
   const updateSignals = useCallback(
     (updater: (current: IntentSignals) => IntentSignals) => {
-      const nextSignals = normalizeSignals(updater(signalsRef.current));
+      const currentSignals = signalsRef.current;
+      const nextSignals = normalizeSignals(updater(currentSignals));
+      if (signalsMatch(currentSignals, nextSignals)) return;
+
       const nextSnapshot = inferIntent(nextSignals);
       signalsRef.current = nextSignals;
       saveIntentSignals(nextSignals);
 
-      setSnapshot((current) =>
-        snapshotsMatch(current, nextSnapshot) ? current : nextSnapshot,
-      );
+      setSnapshot((current) => {
+        if (snapshotsMatch(current, nextSnapshot)) return current;
+        return nextSnapshot;
+      });
     },
     [],
   );
