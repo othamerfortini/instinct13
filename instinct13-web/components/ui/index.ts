@@ -42,3 +42,5 @@ export { AdaptiveContactIntro } from "./AdaptiveContactIntro";
 export { ManifestationReveal } from "./ManifestationReveal";
 export { ManifestationEmergence } from "./ManifestationEmergence";
 export type { ManifestationStage } from "./ManifestationEmergence";
+export { ManifestationField } from "./ManifestationField";
+export type { ManifestationStage as ManifestationFieldStage } from "./ManifestationField";
