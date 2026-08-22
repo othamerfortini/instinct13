@@ -35,8 +35,11 @@ function Stroke({
         rotate: isResolved ? x * 0.5 : x * 3,
       }}
       transition={{ ...transition, delay: index * 0.035 }}
-      className="absolute left-1/2 top-1/2 h-px w-[clamp(2.5rem,8vw,5rem)] origin-center bg-white/75"
-      style={{ marginTop: y, marginLeft: x < 0 ? "calc(clamp(2.5rem, 8vw, 5rem) * -1)" : 0 }}
+      className={[
+        "absolute top-1/2 h-px w-[clamp(2.5rem,8vw,5rem)] bg-white/75",
+        side === "left" ? "right-1/2 origin-right" : "left-1/2 origin-left",
+      ].join(" ")}
+      style={{ marginTop: y }}
     />
   );
 }
