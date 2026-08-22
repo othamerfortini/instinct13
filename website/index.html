@@ -1,1 +1,348 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Instinct 13</title></head><body><h1>Instinct 13</h1><p>Instinct 13 is building a constitutional architecture for understanding human behavior.</p><nav><ul><li>Philosophy</li><li>Manifesto</li><li>The Circle</li><li>The Mirror</li><li>Contact</li></ul></nav></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instinct 13 — an observation before interpretation.">
+  <title>Instinct 13</title>
+  <style>
+    :root {
+      --black: #080808;
+      --white: #f5f5f2;
+      --muted: #8b8b86;
+      --line: rgba(245, 245, 242, .16);
+      --red: #d61f26;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; min-height: 100%; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    button, a { font: inherit; }
+
+    .experience {
+      min-height: 100svh;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .mark {
+      position: fixed;
+      top: 28px;
+      left: 28px;
+      z-index: 5;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--white);
+      opacity: 0;
+      transform: scale(.86);
+      transition: opacity 900ms var(--ease), transform 1200ms var(--ease), border-color 700ms var(--ease);
+      pointer-events: none;
+    }
+
+    .mark::before {
+      content: "13";
+      font-size: 10px;
+      letter-spacing: .08em;
+    }
+
+    .mark.is-visible {
+      opacity: .9;
+      transform: scale(1);
+    }
+
+    .mark.is-event {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .state {
+      position: absolute;
+      inset: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 9vw;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 1100ms var(--ease), transform 1100ms var(--ease), visibility 0s linear 1100ms;
+    }
+
+    .state.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: opacity 1100ms var(--ease), transform 1100ms var(--ease), visibility 0s;
+    }
+
+    .state-inner {
+      width: min(100%, 960px);
+      text-align: center;
+    }
+
+    .statement {
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 7.2rem);
+      line-height: .96;
+      letter-spacing: -.055em;
+      font-weight: 450;
+    }
+
+    .statement--quiet {
+      max-width: 940px;
+      margin-inline: auto;
+      font-size: clamp(2rem, 4.8vw, 5.1rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+
+    .eyebrow {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .question {
+      margin: 0;
+      font-size: clamp(2.2rem, 5.8vw, 6rem);
+      line-height: 1;
+      letter-spacing: -.05em;
+      font-weight: 420;
+    }
+
+    .passage {
+      margin-top: 48px;
+      appearance: none;
+      border: 0;
+      border-bottom: 1px solid rgba(245,245,242,.38);
+      background: transparent;
+      color: var(--white);
+      padding: 12px 0 10px;
+      cursor: pointer;
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      transition: border-color 400ms ease, color 400ms ease;
+    }
+
+    .passage:hover,
+    .passage:focus-visible {
+      border-color: var(--red);
+      color: var(--red);
+      outline: none;
+    }
+
+    .nav-shell {
+      position: fixed;
+      right: 28px;
+      top: 28px;
+      z-index: 5;
+      opacity: 0;
+      transform: translateY(-8px);
+      pointer-events: none;
+      transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+    }
+
+    .nav-shell.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      max-width: min(72vw, 620px);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 9px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      transition: color 300ms ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible { color: var(--white); outline: none; }
+
+    .discovery {
+      align-self: end;
+      justify-self: center;
+      position: fixed;
+      bottom: 34px;
+      z-index: 4;
+      color: rgba(245,245,242,.38);
+      font-size: 9px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+    }
+
+    .discovery.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .event-dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--red);
+      vertical-align: middle;
+      opacity: 0;
+      transform: scale(.4);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .event-dot.is-visible { opacity: 1; transform: scale(1); }
+
+    @media (max-width: 700px) {
+      .mark { top: 20px; left: 20px; }
+      .nav-shell { top: 76px; right: 20px; left: 20px; }
+      nav { justify-content: flex-start; gap: 12px 16px; max-width: none; }
+      .state { padding: 28vw 8vw; }
+      .passage { margin-top: 38px; }
+      .discovery { bottom: 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 1ms !important;
+        animation-duration: 1ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="experience" aria-live="polite">
+    <div class="mark" id="mark" aria-label="Instinct 13"></div>
+
+    <div class="nav-shell" id="navShell">
+      <nav aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#circle">The Circle</a>
+        <a href="#mirror">The Mirror</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="state is-active" data-state="0" aria-label="Disruption">
+      <div class="state-inner">
+        <p class="statement">YOU ARE NOT A TYPE.</p>
+      </div>
+    </section>
+
+    <section class="state" data-state="1" aria-label="Observation" aria-hidden="true">
+      <div class="state-inner">
+        <p class="question">WHAT IS MANIFESTING NOW?</p>
+      </div>
+    </section>
+
+    <section class="state" data-state="2" aria-label="Humility" aria-hidden="true">
+      <div class="state-inner">
+        <p class="statement statement--quiet">REALITY IS ALWAYS GREATER<br>THAN THE FRAMEWORK USED TO OBSERVE IT.</p>
+      </div>
+    </section>
+
+    <section class="state" data-state="3" aria-label="Participation" aria-hidden="true">
+      <div class="state-inner">
+        <p class="eyebrow"><span class="event-dot" id="eventDot"></span>Instinct 13</p>
+        <button class="passage" id="beginObservation" type="button">Begin observation</button>
+      </div>
+    </section>
+
+    <div class="discovery" id="discovery">Observation before interpretation.</div>
+  </main>
+
+  <script>
+    (() => {
+      const states = [...document.querySelectorAll('.state')];
+      const mark = document.getElementById('mark');
+      const navShell = document.getElementById('navShell');
+      const beginObservation = document.getElementById('beginObservation');
+      const eventDot = document.getElementById('eventDot');
+      const discovery = document.getElementById('discovery');
+      let current = 0;
+      let timer;
+
+      const show = (index) => {
+        current = index;
+        states.forEach((state, i) => {
+          const active = i === index;
+          state.classList.toggle('is-active', active);
+          state.setAttribute('aria-hidden', String(!active));
+        });
+
+        if (index >= 1) mark.classList.add('is-visible');
+        if (index === 2) mark.classList.remove('is-event');
+        if (index === 3) {
+          mark.classList.add('is-event');
+          eventDot.classList.add('is-visible');
+        }
+      };
+
+      const advance = () => {
+        if (current < 3) show(current + 1);
+      };
+
+      const schedule = (delay) => {
+        clearTimeout(timer);
+        timer = setTimeout(advance, delay);
+      };
+
+      // The first states reveal themselves without requiring the visitor to operate the interface.
+      schedule(2800);
+      states[1].addEventListener('transitionend', () => {
+        if (current === 1) schedule(3400);
+      });
+      states[2].addEventListener('transitionend', () => {
+        if (current === 2) schedule(4800);
+      });
+
+      beginObservation.addEventListener('click', () => {
+        navShell.classList.add('is-visible');
+        discovery.classList.add('is-visible');
+        mark.classList.add('is-visible', 'is-event');
+        eventDot.classList.add('is-visible');
+      });
+
+      // Preserve a calm keyboard path through the experience.
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          if (current < 3 && document.activeElement === document.body) {
+            event.preventDefault();
+            advance();
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
