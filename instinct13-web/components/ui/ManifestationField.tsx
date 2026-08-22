@@ -8,7 +8,6 @@ type V3 = [number, number, number];
 
 type Particle = {
   base: V3;
-  velocity: V3;
   side: -1 | 1;
   phase: number;
   size: number;
@@ -34,7 +33,7 @@ function project(p:V3, aspect:number, camera:V3, focal:number): [number,number,n
 function makeParticles(count:number): Particle[] {
   const particles:Particle[]=[];
   for(let i=0;i<count;i++){
-    const side:i extends never ? never : -1|1 = i%2===0?-1:1;
+    const side: -1 | 1 = i%2===0 ? -1 : 1;
     const u=(i+1)/(count+1);
     const theta=i*2.399963;
     const band=((i*17)%100)/100;
@@ -42,7 +41,7 @@ function makeParticles(count:number): Particle[] {
     const x=side*(.08+radius*(.44+.14*Math.sin(theta*.7)));
     const y=Math.cos(theta*.53)*(.18+radius*.52)+(u-.5)*.2;
     const z=Math.sin(theta*.71)*(.34+radius*.48);
-    particles.push({base:[x,y,z],velocity:[0,0,0],side,phase:theta,size:.7+((i*13)%9)/12});
+    particles.push({base:[x,y,z],side,phase:theta,size:.7+((i*13)%9)/12});
   }
   return particles;
 }
@@ -63,6 +62,7 @@ export function ManifestationField({stage}:{stage:ManifestationStage}){
     const program=gl.createProgram();if(!program)return;gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))return;
     const position=gl.getAttribLocation(program,"position"),pointSize=gl.getAttribLocation(program,"pointSize"),alpha=gl.getAttribLocation(program,"alpha"),tint=gl.getUniformLocation(program,"tint");
     const pb=gl.createBuffer(),sb=gl.createBuffer(),ab=gl.createBuffer();if(!pb||!sb||!ab||position<0||pointSize<0||alpha<0||!tint)return;
+    gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.clearDepth(1);
 
     const count=window.innerWidth<700?180:360;
     const particles=makeParticles(count);
@@ -76,15 +76,14 @@ export function ManifestationField({stage}:{stage:ManifestationStage}){
       gl.bindBuffer(gl.ARRAY_BUFFER,ab);gl.bufferData(gl.ARRAY_BUFFER,alphas,gl.DYNAMIC_DRAW);gl.enableVertexAttribArray(alpha);gl.vertexAttribPointer(alpha,1,gl.FLOAT,false,0,0);
     };
     const drawPoints=(pts:[number,number,number][],sizes:number[],alphas:number[],red=false)=>{bind(new Float32Array(pts.flatMap(p=>[p[0],p[1],0])),new Float32Array(sizes),new Float32Array(alphas));gl.uniform3f(tint,red?.76:.92,red?.05:.92,red?.08:.92);gl.drawArrays(gl.POINTS,0,pts.length)};
-    const drawLine=(a:[number,number,number],b:[number,number,number],opacity:number,red=false)=>{bind(new Float32Array([a[0],a[1],0,b[0],b[1],0]),new Float32Array([1,1]),new Float32Array([1,1]));gl.uniform3f(tint,red?.76:.88,red?.05:.88,red?.08:.88);gl.drawArrays(gl.LINES,0,2);gl.uniform3f(tint,red?.76:.76,red?.05:.76,red?.08:.76)};
+    const drawLine=(a:[number,number,number],b:[number,number,number],opacity:number,red=false)=>{bind(new Float32Array([a[0],a[1],0,b[0],b[1],0]),new Float32Array([1,1]),new Float32Array([opacity,opacity]));gl.uniform3f(tint,red?.76:.88,red?.05:.88,red?.08:.88);gl.drawArrays(gl.LINES,0,2)};
 
     const draw=(now:number)=>{
       const time=reduced?0:(now-start)*.001;
       const aspect=(canvas.clientWidth||1)/(canvas.clientHeight||1);
       const emergence=ease(stage/1.2), opposition=ease((stage-1)/2), observerIn=ease((stage-2.5)/1.5), recognition=ease(stage-4);
-      gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.useProgram(program);
+      gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(program);
 
-      // The camera breathes with the field instead of orbiting like a product render.
       const camera:V3=[reduced?0:Math.sin(time*.12)*.11*(1-recognition),reduced?0:Math.cos(time*.16)*.07*(1-recognition),3.35-recognition*.32];
       const focal=1.56;
       const anchors=ANCHORS.map((base,i)=>{
@@ -112,30 +111,25 @@ export function ManifestationField({stage}:{stage:ManifestationStage}){
         const driftY=reduced?0:Math.cos(time*.41+q.phase)*.07*opposition;
         const driftZ=reduced?0:Math.sin(time*.35+q.phase*.8)*.13*opposition;
         let p:V3=[q.base[0]*radial+driftX*side,q.base[1]*radial+driftY,q.base[2]*radial+driftZ];
-        // The field gently migrates upward/downward instead of looping on a single plane.
         if(!reduced)p=[p[0],p[1]+Math.sin(time*.24+q.phase*.33)*.035,p[2]];
         if(recognition>0){const target:V3=[side*(.22+Math.abs(q.base[0])*.34),q.base[1]*.72,q.base[2]*.12];p=[lerp(p[0],target[0],recognition*.58),lerp(p[1],target[1],recognition*.58),lerp(p[2],target[2],recognition*.58)]}
         const pp=project(p,aspect,camera,focal);projectedParticles.push(pp);particleSizes.push(Math.max(.8,(2.0+q.size*1.7)/pp[2]*pulse));particleAlphas.push(.035+emergence*.10);
       }
 
-      // Ambient matter makes the space feel inhabited, not like a diagram.
       if(stage>=1&&!reduced){
         const ambientCount=window.innerWidth<700?90:170;const pts:[number,number,number][]=[];const ss:number[]=[];const aa:number[]=[];
-        for(let i=0;i<ambientCount;i++){
-          const a=i*2.399963;const radius=1.05+((i*37)%100)/100*1.15;
-          const p:V3=[Math.cos(a+time*.018)*radius,Math.sin(a*1.31+time*.015)*radius*.62,Math.sin(a*.77)*1.05];const pp=project(p,aspect,camera,focal);pts.push(pp);ss.push(Math.max(.45,1.25/pp[2]));aa.push(.018+emergence*.018);
-        }
+        for(let i=0;i<ambientCount;i++){const a=i*2.399963;const radius=1.05+((i*37)%100)/100*1.15;const p:V3=[Math.cos(a+time*.018)*radius,Math.sin(a*1.31+time*.015)*radius*.62,Math.sin(a*.77)*1.05];const pp=project(p,aspect,camera,focal);pts.push(pp);ss.push(Math.max(.45,1.25/pp[2]));aa.push(.018+emergence*.018)}
         drawPoints(pts,ss,aa);
       }
 
       const internal=[[0,1],[1,2],[2,3],[3,4],[4,5],[6,7],[7,8],[8,9],[9,10],[10,11]] as const;
       internal.forEach(([a,b],i)=>{if(stage>=2&&i/10<clamp((stage-1)*1.4))drawLine(projectedAnchors[a],projectedAnchors[b],.08+opposition*.08)});
-      if(stage>=3){[[1,7],[2,8],[4,10]].forEach(([a,b],i)=>drawLine(projectedAnchors[a],projectedAnchors[b],.035+opposition*.025*(i+1)));}
+      if(stage>=3){[[1,7],[2,8],[4,10]].forEach(([a,b],i)=>drawLine(projectedAnchors[a],projectedAnchors[b],.035+opposition*.025*(i+1)))}
       if(stage>=4)drawLine(projectedAnchors[5],projectedAnchors[6],.06+recognition*.10);
 
       const observer:V3=[OBSERVER[0]+(reduced?0:Math.sin(time*.22)*.045),OBSERVER[1]+(reduced?0:Math.cos(time*.19)*.04),OBSERVER[2]+(reduced?0:Math.sin(time*.17)*.12)];
       const po=project(observer,aspect,camera,focal);
-      if(stage>=3){drawLine(po,projectedAnchors[2],.05+observerIn*.08);drawLine(po,projectedAnchors[9],.05+observerIn*.08);}
+      if(stage>=3){drawLine(po,projectedAnchors[2],.05+observerIn*.08);drawLine(po,projectedAnchors[9],.05+observerIn*.08)}
 
       drawPoints(projectedParticles,particleSizes,particleAlphas);
       const anchorSizes=projectedAnchors.map((p,i)=>Math.max(2.2,4.2/p[2])*(reduced?1:1+Math.sin(time*1.25+i*.65)*.10));
