@@ -3,23 +3,18 @@
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
-import {
-  BeginObservationButton,
-  LayoutContainer,
-  LogoReveal,
-  ManifestationField,
-} from "@/components/ui";
+import { BeginObservationButton, LayoutContainer, ManifestationField } from "@/components/ui";
 
 type ExperienceStage = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
 const DURATIONS: Record<ExperienceStage, number> = {
   0: 2600,
-  1: 3000,
-  2: 3400,
-  3: 3800,
-  4: 3800,
-  5: 3200,
-  6: 2400,
+  1: 3200,
+  2: 3600,
+  3: 4000,
+  4: 4000,
+  5: 3400,
+  6: 2600,
   7: 2800,
   8: 3400,
   9: 0,
@@ -38,13 +33,13 @@ export default function HomePage() {
   useEffect(() => {
     if (reducedMotion) {
       setStage(5);
-      const timer = window.setTimeout(() => setStage(6), 1200);
+      const timer = window.setTimeout(() => setStage(6), 900);
       return () => window.clearTimeout(timer);
     }
 
     if (stage === 9) {
-      setNavigationVisible(true);
-      return;
+      const timer = window.setTimeout(() => setNavigationVisible(true), 900);
+      return () => window.clearTimeout(timer);
     }
 
     const timer = window.setTimeout(() => setStage(next(stage)), DURATIONS[stage]);
@@ -95,7 +90,6 @@ export default function HomePage() {
           )}
           {stage === 9 && (
             <div className="flex flex-col items-center gap-8">
-              <LogoReveal animate />
               <p className="text-center text-xl font-light tracking-tight text-neutral-200 sm:text-2xl">
                 Begin Observation
               </p>
