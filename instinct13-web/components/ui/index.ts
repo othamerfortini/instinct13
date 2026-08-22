@@ -40,3 +40,5 @@ export { PageLoader } from "./PageLoader";
 export { AdaptiveExperience } from "./AdaptiveExperience";
 export { AdaptiveContactIntro } from "./AdaptiveContactIntro";
 export { ManifestationReveal } from "./ManifestationReveal";
+export { ManifestationEmergence } from "./ManifestationEmergence";
+export type { ManifestationStage } from "./ManifestationEmergence";
