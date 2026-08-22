@@ -6,7 +6,7 @@ import {
   BeginObservationButton,
   ExperienceState,
   LayoutContainer,
-  LogoReveal,
+  ManifestationEmergence,
 } from "@/components/ui";
 
 export default function HomePage() {
@@ -24,25 +24,35 @@ export default function HomePage() {
   return (
     <LayoutContainer navigationVisible={navigationVisible}>
       <ExperienceState
+        autoAdvanceInterval={3000}
         onSequenceComplete={handleSequenceComplete}
         renderState0={() => (
-          <p className="text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
-            You Are Not a Type.
-          </p>
+          <div className="flex items-center justify-center">
+            <ManifestationEmergence stage={0} />
+          </div>
         )}
         renderState1={() => (
-          <p className="text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
-            What is manifesting now?
-          </p>
+          <div className="flex flex-col items-center justify-center gap-8">
+            <ManifestationEmergence stage={1} />
+            <p className="text-center text-xs uppercase tracking-[0.28em] text-neutral-500">
+              What is manifesting now?
+            </p>
+          </div>
         )}
         renderState2={() => (
-          <p className="max-w-2xl text-center text-xl font-medium tracking-tight sm:text-2xl md:text-3xl">
-            Reality is always greater than the framework used to observe it.
-          </p>
+          <div className="flex flex-col items-center justify-center gap-8">
+            <ManifestationEmergence stage={2} />
+            <p className="max-w-xl text-center text-lg font-medium leading-relaxed tracking-tight text-neutral-200 sm:text-xl md:text-2xl">
+              Reality is always greater than the framework used to observe it.
+            </p>
+          </div>
         )}
         renderState3={() => (
-          <div className="flex flex-col items-center gap-8">
-            <LogoReveal animate />
+          <div className="flex flex-col items-center justify-center gap-7">
+            <ManifestationEmergence stage={3} />
+            <p className="text-center text-xl font-medium tracking-tight text-neutral-100 sm:text-2xl">
+              You Are Not a Type.
+            </p>
             <BeginObservationButton onActivate={handleBeginObservation} />
           </div>
         )}
