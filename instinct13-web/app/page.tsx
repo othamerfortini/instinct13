@@ -3,7 +3,16 @@
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion";
-import { BeginObservationButton, LayoutContainer, ManifestationField } from "@/components/ui";
+import {
+  BeginObservationButton,
+  BodyText,
+  ContentPage,
+  LayoutContainer,
+  ManifestationField,
+  PremiumLink,
+  Section,
+  SectionHeading,
+} from "@/components/ui";
 
 type ExperienceStage = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
@@ -100,6 +109,64 @@ export default function HomePage() {
           )}
         </div>
       </main>
+
+      {navigationVisible && (
+        <ContentPage>
+          <div className="space-y-16">
+            <Section>
+              <SectionHeading>Organizational Identity</SectionHeading>
+              <BodyText>
+                Instinct 13 is building an operating system for understanding
+                human behavior.
+              </BodyText>
+              <BodyText>
+                We do not exist to classify people. We exist to create
+                frameworks that help people observe what is manifesting,
+                understand why it may be emerging, and consciously decide what
+                they want to cultivate next.
+              </BodyText>
+              <PremiumLink href="/philosophy">Read the Philosophy →</PremiumLink>
+            </Section>
+
+            <Section>
+              <SectionHeading>Philosophy</SectionHeading>
+              <BodyText>
+                Our goal is not certainty. Our goal is greater awareness,
+                better decisions, and intentional development.
+              </BodyText>
+              <BodyText>
+                Principles are permanent. Manifestations are not.
+              </BodyText>
+              <PremiumLink href="/manifesto">Read the Manifesto →</PremiumLink>
+            </Section>
+
+            <Section>
+              <SectionHeading>Current Project Status</SectionHeading>
+              <div className="space-y-3 text-neutral-400">
+                <p>
+                  <strong className="font-medium text-neutral-200">
+                    Architectural Baseline:
+                  </strong>{" "}
+                  v1.0
+                </p>
+                <p>
+                  <strong className="font-medium text-neutral-200">
+                    Current Phase:
+                  </strong>{" "}
+                  Phase II — Validation
+                </p>
+                <p>
+                  <strong className="font-medium text-neutral-200">
+                    Active Validation:
+                  </strong>{" "}
+                  VE-001 — Website implementation
+                </p>
+              </div>
+              <PremiumLink href="/contact">Project and documentation status →</PremiumLink>
+            </Section>
+          </div>
+        </ContentPage>
+      )}
     </LayoutContainer>
   );
 }
