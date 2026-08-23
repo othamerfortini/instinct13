@@ -72,7 +72,9 @@ function project(
   const depth = Math.max(0.25, -z);
   const x = (p[0] * focal) / depth / aspect;
   const y = (p[1] * focal) / depth;
-  const clipZ = ((far + near) / (near - far)) + (2 * far * near) / ((near - far) * z);
+  const clipZ =
+    (far + near) / (near - far) +
+    (2 * far * near) / ((near - far) * z);
   return { x, y, z: clipZ, size: focal / depth };
 }
 
@@ -197,7 +199,11 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(canvas);
 
-    const bind = (positions: Float32Array, sizes: Float32Array, alphas: Float32Array) => {
+    const bind = (
+      positions: Float32Array,
+      sizes: Float32Array,
+      alphas: Float32Array,
+    ) => {
       gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
       gl.bufferData(gl.ARRAY_BUFFER, positions, gl.DYNAMIC_DRAW);
       gl.enableVertexAttribArray(position);
@@ -214,10 +220,21 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
       gl.vertexAttribPointer(alpha, 1, gl.FLOAT, false, 0, 0);
     };
 
-    const drawPoints = (points: P2[], sizes: number[], alphas: number[], red = false) => {
+    const drawPoints = (
+      points: P2[],
+      sizes: number[],
+      alphas: number[],
+      red = false,
+    ) => {
+      if (!points.length) return;
       const positions = new Float32Array(points.flatMap((p) => [p.x, p.y, p.z]));
       bind(positions, new Float32Array(sizes), new Float32Array(alphas));
-      gl.uniform3f(tint, red ? 0.78 : 0.93, red ? 0.05 : 0.93, red ? 0.08 : 0.93);
+      gl.uniform3f(
+        tint,
+        red ? 0.78 : 0.93,
+        red ? 0.05 : 0.93,
+        red ? 0.08 : 0.93,
+      );
       gl.drawArrays(gl.POINTS, 0, points.length);
     };
 
@@ -234,7 +251,12 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
         new Float32Array(new Array(pairs.length * 2).fill(1)),
         new Float32Array(alphas),
       );
-      gl.uniform3f(tint, red ? 0.78 : 0.88, red ? 0.05 : 0.88, red ? 0.08 : 0.88);
+      gl.uniform3f(
+        tint,
+        red ? 0.78 : 0.88,
+        red ? 0.05 : 0.88,
+        red ? 0.08 : 0.88,
+      );
       gl.drawArrays(gl.LINES, 0, pairs.length * 2);
     };
 
@@ -271,12 +293,11 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
         ];
 
         if (recognition > 0) {
-          // The final geometry resolves into a balanced, recognizable identity field
-          // without displaying or explaining its internal construction.
           const t = i / 5;
-          const target: V3 = side < 0
-            ? [-0.42 + t * 0.20, -0.56 + t * 1.05, 0]
-            : [0.26 + Math.sin(t * Math.PI) * 0.30, 0.50 - t * 1.02, 0];
+          const target: V3 =
+            side < 0
+              ? [-0.42 + t * 0.20, -0.56 + t * 1.05, 0]
+              : [0.26 + Math.sin(t * Math.PI) * 0.30, 0.50 - t * 1.02, 0];
           p = [
             lerp(p[0], target[0], recognition * 0.82),
             lerp(p[1], target[1], recognition * 0.82),
@@ -294,22 +315,36 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
 
       for (let i = 0; i < particles.length; i++) {
         const q = particles[i];
-        const local = reduced ? 0 : Math.sin(time * (0.70 + (i % 5) * 0.035) + q.phase) * 0.035;
+        const local = reduced
+          ? 0
+          : Math.sin(time * (0.70 + (i % 5) * 0.035) + q.phase) * 0.035;
         const pulse = reduced ? 1 : 1 + Math.sin(time * 1.08 + q.phase) * 0.08;
         const radial = (1 + local) * fieldBreath * (0.72 + emergence * 0.38);
-        const driftX = reduced ? 0 : Math.sin(time * 0.27 + q.phase * 1.7) * 0.075 * opposition;
-        const driftY = reduced ? 0 : Math.cos(time * 0.39 + q.phase) * 0.08 * opposition;
-        const driftZ = reduced ? 0 : Math.sin(time * 0.33 + q.phase * 0.8) * 0.16 * opposition;
+        const driftX = reduced
+          ? 0
+          : Math.sin(time * 0.27 + q.phase * 1.7) * 0.075 * opposition;
+        const driftY = reduced
+          ? 0
+          : Math.cos(time * 0.39 + q.phase) * 0.08 * opposition;
+        const driftZ = reduced
+          ? 0
+          : Math.sin(time * 0.33 + q.phase * 0.8) * 0.16 * opposition;
         let p: V3 = [
           q.base[0] * radial + driftX * q.side,
           q.base[1] * radial + driftY,
           q.base[2] * radial + driftZ,
         ];
 
-        if (!reduced) p = [p[0], p[1] + Math.sin(time * 0.22 + q.phase * 0.33) * 0.04, p[2]];
+        if (!reduced) {
+          p = [p[0], p[1] + Math.sin(time * 0.22 + q.phase * 0.33) * 0.04, p[2]];
+        }
 
         if (recognition > 0) {
-          const target: V3 = [q.side * (0.22 + Math.abs(q.base[0]) * 0.34), q.base[1] * 0.68, q.base[2] * 0.10];
+          const target: V3 = [
+            q.side * (0.22 + Math.abs(q.base[0]) * 0.34),
+            q.base[1] * 0.68,
+            q.base[2] * 0.10,
+          ];
           p = [
             lerp(p[0], target[0], recognition * 0.48),
             lerp(p[1], target[1], recognition * 0.48),
@@ -320,7 +355,7 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
         const projected = projectPoint(p);
         projectedParticles.push(projected);
         particleSizes.push(Math.max(0.65, (1.8 + q.size * 1.8) * projected.size * pulse));
-        particleAlphas.push(0.018 + emergence * 0.105);
+        particleAlphas.push(0.012 + emergence * 0.105);
       }
 
       if (stage >= 1 && !reduced) {
@@ -349,8 +384,13 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
         [6, 7], [7, 8], [8, 9], [9, 10], [10, 11],
       ];
       if (stage >= 2) {
-        const visiblePairs = structuralPairs.filter((_, i) => i / structuralPairs.length < clamp((stage - 1) * 1.25));
-        drawLines(visiblePairs.map(([a, b]) => [projectedAnchors[a], projectedAnchors[b]]), 0.07 + opposition * 0.08);
+        const visiblePairs = structuralPairs.filter(
+          (_, i) => i / structuralPairs.length < clamp((stage - 1) * 1.25),
+        );
+        drawLines(
+          visiblePairs.map(([a, b]) => [projectedAnchors[a], projectedAnchors[b]]),
+          0.07 + opposition * 0.08,
+        );
       }
 
       if (stage >= 3) {
@@ -378,17 +418,29 @@ export function ManifestationField({ stage }: { stage: ManifestationStage }) {
       }
 
       drawPoints(projectedParticles, particleSizes, particleAlphas);
+
+      const anchorAlphas = projectedAnchors.map((_, i) => {
+        if (stage === 0) return 0;
+        if (stage === 1) return i < 6 ? 0.46 : 0.06;
+        return 0.52 + recognition * 0.18;
+      });
       drawPoints(
         projectedAnchors,
-        projectedAnchors.map((p, i) => Math.max(2.2, 4.1 * p.size) * (reduced ? 1 : 1 + Math.sin(time * 1.2 + i * 0.65) * 0.1)),
-        projectedAnchors.map(() => 0.52 + recognition * 0.18),
+        projectedAnchors.map((p, i) =>
+          Math.max(2.2, 4.1 * p.size) *
+          (reduced ? 1 : 1 + Math.sin(time * 1.2 + i * 0.65) * 0.1),
+        ),
+        anchorAlphas,
       );
-      drawPoints(
-        [projectedObserver],
-        [Math.max(4.5, 7.2 * projectedObserver.size)],
-        [0.92],
-        stage >= 5,
-      );
+
+      if (stage >= 3) {
+        drawPoints(
+          [projectedObserver],
+          [Math.max(4.5, 7.2 * projectedObserver.size)],
+          [0.92],
+          stage >= 5,
+        );
+      }
 
       frame = requestAnimationFrame(draw);
     };
@@ -474,5 +526,8 @@ function FallbackField({ stage }: { stage: ManifestationStage }) {
 }
 
 function structuralPairsFallback(): Array<[number, number]> {
-  return [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [6, 7], [7, 8], [8, 9], [9, 10], [10, 11]];
+  return [
+    [0, 1], [1, 2], [2, 3], [3, 4], [4, 5],
+    [6, 7], [7, 8], [8, 9], [9, 10], [10, 11],
+  ];
 }
