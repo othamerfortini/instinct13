@@ -6,7 +6,6 @@ import { usePrefersReducedMotion } from "@/lib/motion/use-prefers-reduced-motion
 import {
   BeginObservationButton,
   BodyText,
-  ContentPage,
   LayoutContainer,
   ManifestationField,
   PremiumLink,
@@ -111,8 +110,8 @@ export default function HomePage() {
       </main>
 
       {navigationVisible && (
-        <ContentPage>
-          <div className="space-y-16">
+        <section className="relative bg-black px-6 pb-32 pt-28 text-white sm:px-8 sm:pt-36 md:pb-40">
+          <div className="mx-auto max-w-4xl space-y-16">
             <Section>
               <SectionHeading>Organizational Identity</SectionHeading>
               <BodyText>
@@ -165,7 +164,7 @@ export default function HomePage() {
               <PremiumLink href="/contact">Project and documentation status →</PremiumLink>
             </Section>
           </div>
-        </ContentPage>
+        </section>
       )}
     </LayoutContainer>
   );
