@@ -51,11 +51,35 @@ export async function POST(request: NextRequest) {
 
   let body: unknown;
   try {
-    const rawBody = await request.text();
-    if (new TextEncoder().encode(rawBody).byteLength > MAX_REQUEST_BYTES) {
-      return NextResponse.json({ error: "Request body is too large." }, { status: 413 });
+    const reader = request.body?.getReader();
+    if (!reader) {
+      return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
     }
-    body = JSON.parse(rawBody);
+
+    const chunks: Uint8Array[] = [];
+    let totalBytes = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      totalBytes += value.byteLength;
+      if (totalBytes > MAX_REQUEST_BYTES) {
+        await reader.cancel();
+        return NextResponse.json(
+          { error: "Request body is too large." },
+          { status: 413 },
+        );
+      }
+      chunks.push(value);
+    }
+
+    const bytes = new Uint8Array(totalBytes);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    body = JSON.parse(new TextDecoder().decode(bytes));
   } catch {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
