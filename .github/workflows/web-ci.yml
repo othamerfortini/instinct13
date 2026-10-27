@@ -1,0 +1,40 @@
+name: Web CI
+
+on:
+  pull_request:
+    paths:
+      - "instinct13-web/**"
+      - ".github/workflows/web-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "instinct13-web/**"
+      - ".github/workflows/web-ci.yml"
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: instinct13-web
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: instinct13-web/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Type-check
+        run: npm run typecheck
+      - name: Test intent engine
+        run: npm run test:intent
+      - name: Build production app
+        run: npm run build
