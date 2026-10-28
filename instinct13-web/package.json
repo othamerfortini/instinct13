@@ -42,5 +42,8 @@
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "sharp": "0.35.5"
   }
 }
