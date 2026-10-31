@@ -24,6 +24,30 @@ Each pair is reviewed in this order:
 6. Check overlap with the other five pairs and avoid moral ranking or a simplistic good/evil split.
 7. Record owner-approved decisions separately from working hypotheses.
 
+## Iterative deconstruction and reformulation method
+
+The review is consensus-driven and deliberately non-confirmatory: an initial answer is a hypothesis to examine, not a conclusion to defend. The review must deconstruct the answer, reformulate the question and answer again.
+
+For each archetype and each pair, apply this cycle:
+
+1. **Initial question:** State the conceptual question being investigated, with scope and terms made explicit.
+2. **Initial answer:** Record the first answer as a hypothesis, including its provenance (owner-authored, legacy source or assistant-generated). Do not upgrade its status by repetition.
+3. **Deconstruction:** Challenge the answer. Identify hidden assumptions, ambiguous terms, unsupported claims, contradictions, counterexamples, cultural bias, moral ranking, overlap with another archetype and dependence on the animal metaphor.
+4. **Reformulated question:** Replace the original question with a more precise or deeper question that addresses the weaknesses found.
+5. **Revised answer:** Answer the reformulated question, explicitly explaining what changed and why. Preserve unresolved alternatives rather than forcing closure.
+6. **Cross-pair coherence test:** Test the revised concept against the other eleven archetypes, all six pair tensions, the archetype/manifestation distinction and the constitutional role of the 13th.
+7. **Provisional conclusion:** Record a revised definition, possible contextual manifestations, remaining uncertainties, evidence and the decision that requires owner approval.
+
+Repeat the cycle whenever a material contradiction, ambiguity or new piece of evidence appears. A cycle is not complete merely because a plausible answer has been written.
+
+### Review outcomes
+
+- **Confirmed:** The analysis withstands deconstruction and the project owner explicitly approves the concept/decision.
+- **Provisional:** The current answer is coherent enough to retain as a working hypothesis, but analysis or owner approval remains outstanding.
+- **Rejected:** The answer fails the coherence test, depends on unsupported assumptions or misrepresents the intended concept. Preserve the reason for rejection so it is not inadvertently reintroduced.
+
+The objective is not to validate the first answer. It is to discover whether the answer survives rigorous questioning and, if not, to produce a better question and a better-grounded answer. Consensus means agreement on the method and explicit recording of decisions; it does not mean treating an assistant hypothesis as owner approval.
+
 ## Pair-by-pair evidence and status
 
 | Pair | Current labels and symbols | Evidence currently available | Status |
