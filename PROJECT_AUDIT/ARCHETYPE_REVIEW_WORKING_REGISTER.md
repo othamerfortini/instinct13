@@ -26,7 +26,7 @@ It is not a thirteenth archetype, animal, personality, character or fixed identi
 
 This use of “pure manifestation” is a specific constitutional concept and must not be casually conflated with ordinary manifestations (the observable expressions of archetypes). The exact philosophical relationship between the 13th and the ordinary archetype/manifestation distinction remains subject to owner review.
 
-## 3. Review order
+## 4. Review order
 
 For each opposing pair, work in this order:
 
@@ -38,7 +38,29 @@ For each opposing pair, work in this order:
 6. **Visual language:** Define visual representation only after the conceptual work.
 7. **Decision record:** Record rationale, alternatives, owner approval, date and version in the Decision Log.
 
-## 4. Review principles
+## 3. Iterative deconstruction and reformulation
+
+The review is consensus-driven and non-confirmatory. An initial answer is a hypothesis, not a conclusion. For every archetype and pair, the reviewer must:
+
+1. State the initial question precisely.
+2. Record the initial answer and identify its provenance (owner-authored, legacy or assistant-generated).
+3. Deconstruct it: expose assumptions, ambiguity, unsupported claims, contradictions, counterexamples, cultural bias, moral ranking, overlap and dependence on animal symbolism.
+4. Reformulate a more precise or deeper question that addresses those weaknesses.
+5. Answer the reformulated question, explaining what changed and preserving unresolved alternatives.
+6. Test coherence against the other eleven archetypes, the six-pair structure, the archetype/manifestation distinction and the separate role of the 13th.
+7. Record a provisional conclusion, contextual manifestations, uncertainties, evidence and the decision requiring owner approval.
+
+Repeat when material contradictions, ambiguities or new evidence emerge. Do not defend an initial answer merely because it was written first.
+
+### Review outcomes
+
+- **Confirmed:** survives deconstruction and is explicitly approved by the project owner.
+- **Provisional:** coherent as a working hypothesis, but analysis or owner approval remains outstanding.
+- **Rejected:** fails coherence, relies on unsupported assumptions or misrepresents the intended concept. Record why, to prevent accidental reintroduction.
+
+Agreement on this method is not approval of any individual archetype definition. Assistant-generated interpretations remain hypotheses until explicitly approved.
+
+## 5. Review principles
 
 - Archetypes are conceptual patterns; manifestations are their contextual expressions.
 - Neither term should be used as a permanent label for a person.
@@ -51,7 +73,7 @@ For each opposing pair, work in this order:
 - Do not force a relationship between the twelve archetypes and the separate DQD dimensions.
 - The 13th remains outside the twelve: formless, nameless and not an archetype or animal.
 
-## 5. Pair register
+## 6. Pair register
 
 | Pair | Archetype A | Existing animal A | Archetype B | Existing animal B | Status |
 |---|---|---|---|---|---|
@@ -64,7 +86,7 @@ For each opposing pair, work in this order:
 
 These are inherited working labels and pairings, not a declaration that all six pairs have passed review.
 
-## 6. Pair 5 — current working notes
+## 7. Pair 5 — current working notes
 
 The project owner confirmed that The Performer and the transformation archetype are opposites.
 
@@ -77,7 +99,7 @@ The transformation concept, as currently described by the project owner:
 
 **The Becoming** is a candidate name only. It is not approved as final. The animal symbol remains undecided. The butterfly is not the archetype's name and is not the 13th manifestation.
 
-## 7. Decision log template
+## 8. Decision log template
 
 For every pair, record:
 
@@ -97,6 +119,6 @@ For every pair, record:
 - Project-owner decision:
 - Decision Log entry / version:
 
-## 8. Completion criteria
+## 9. Completion criteria
 
 A pair is considered reviewed only when both archetype concepts, the opposition rationale, names, possible manifestations and symbolic representations have been considered separately and approved by the project owner. A review may intentionally leave a name, manifestation example or animal unresolved.
