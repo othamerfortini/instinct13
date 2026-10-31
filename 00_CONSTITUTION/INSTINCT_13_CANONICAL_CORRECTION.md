@@ -2,7 +2,7 @@
 
 **Status:** Authoritative correction / supersedes conflicting legacy descriptions  
 **Scope:** Core concept, archetype structure, symbolism and visual identity  
-**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with the project owner's explicit confirmation of the sixth opposing pair on 2026-10-31.
+**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with project-owner decisions and clarification on 2026-10-31.
 
 ## 1. The 13 is not an archetype
 
@@ -24,20 +24,29 @@ The 13 may be indicated only through abstract presence or manifestation. It is n
 
 ## 2. The twelve archetypes
 
-The system contains **twelve animal archetypes arranged as six opposing pairs**:
+The system contains **twelve archetypes arranged as six opposing pairs**. Animals are symbolic representations, not the archetypes themselves.
 
-| Side A | Opposing side B |
-|---|---|
-| The Manipulator — Fox | The Scholar — Owl |
-| The Ego — Lion | The Echo — Stag / Deer |
-| The Consumer — Pig | The Liberated — Eagle |
-| The Follower — Sheep | The Architect — Spider |
-| The Performer — Peacock | **The Butterfly — Butterfly** |
-| The Predator — Wolf | The Collector — Raven / Crow |
+| Side A | Opposing side B | Review status |
+|---|---|---|
+| The Manipulator — Fox | The Scholar — Owl | Existing pairing; pending full review |
+| The Ego — Lion | The Echo — Stag / Deer | Existing pairing; pending full review |
+| The Consumer — Pig | The Liberated — Eagle | Existing pairing; pending full review |
+| The Follower — Sheep | The Architect — Spider | Existing pairing; pending full review |
+| The Performer — Peacock | **Transformation archetype — name and animal TBD** | Opposition confirmed; concept/name/symbol review in progress |
+| The Predator — Wolf | The Collector — Raven / Crow | Existing pairing; pending full review |
 
-The project owner explicitly confirmed that **The Performer (Peacock) and The Butterfly (Butterfly) are opposites**. The Butterfly symbolizes transformation: the movement from the ugly to the beautiful, and the emergence of a new form through metamorphosis. The Performer represents outward display and the pursuit of external recognition. These are opposing manifestations, not a moral ranking.
+The project owner confirmed that **The Performer and the transformation archetype are opposites**. The transformation archetype must not be named after its animal: the animal is only one possible metaphor and may change independently of the underlying concept.
 
-The legacy *Circle of Instincts* image incorrectly associated “The Awakened” and the butterfly with position 13. That legacy association is superseded: **The Butterfly is the twelfth archetype; the 13th remains formless and is not a butterfly.**
+The project owner's current conceptual direction for this archetype:
+- limitations are often internal to the individual;
+- learning and experience produce continuous evolution;
+- transformation does not erase the past or rebuild from absolute zero; it incorporates and reorganizes what came before;
+- a change of perspective can reveal a different meaning or possibility without requiring external reality to change;
+- transformation is not necessarily a moral improvement, a superior state, or a predetermined final form.
+
+**The Becoming** is currently a candidate name only. It has not been approved as the final archetype name. The animal representation is also undecided.
+
+The legacy *Circle of Instincts* image associated a butterfly with the Performer’s opposite and incorrectly placed “The Awakened” at position 13. The butterfly may remain a historical visual metaphor, but it is not the name of the archetype and cannot represent the 13th manifestation.
 
 ## 3. Structural rule
 
@@ -46,6 +55,7 @@ The legacy *Circle of Instincts* image incorrectly associated “The Awakened”
 - The twelve form six opposing pairs.
 - The 13th is outside the pairs and outside both sides.
 - The 13th has no fixed position as an archetype and no animal or character portrait.
+- Archetype concepts, names, pairings and animal symbols may be reviewed independently; changes must be deliberate and documented.
 
 ## 4. Red is a pulse, not a permanent brand colour
 
@@ -76,4 +86,4 @@ The legacy artwork may remain in the archive as historical material, but it is n
 
 ## 7. Core statement
 
-**Twelve archetypes are arranged as six opposing pairs. The Butterfly opposes The Performer. The thirteenth is not an archetype. It is pure manifestation: nameless, formless, and belonging to neither side.**
+**Twelve archetypes form six opposing pairs. Their concepts define them; animals are changeable symbolic representations. The thirteenth is not an archetype. It is pure manifestation: nameless, formless, and belonging to neither side.**
