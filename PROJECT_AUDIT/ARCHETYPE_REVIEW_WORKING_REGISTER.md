@@ -1,7 +1,7 @@
 # Instinct 13 — Archetype Review Working Register
 
 **Status:** Working document; non-normative until reviewed and approved by the project owner.  
-**Purpose:** Review the twelve conceptual positions and their inherited labels, pairings and animal symbols without treating legacy material as unquestionable canon.
+**Purpose:** Identify recurring qualities, symbolic associations and contextual manifestations across the twelve archetypes without closing their meaning, classifying people or treating legacy material as unquestionable canon.
 
 ## 1. Confirmed distinction: archetype vs. manifestation
 
@@ -12,7 +12,7 @@ The project owner has confirmed that **the twelve are archetypes**: recurring pa
 - **Person:** is not an archetype and must not be permanently classified by one. The twelve archetypes can alternate in their expression within a person or across situations. A person may express different archetypes in different contexts or at different times.
 - **Animal:** is a symbolic representation of an archetype, not the archetype itself and not a manifestation.
 
-One archetype may have multiple manifestations. A single behaviour must not be mistaken for the complete definition of an archetype. The system observes recurring patterns and their expressions; it does not classify people.
+One archetype may have multiple manifestations. A single behaviour must not be mistaken for the complete meaning of an archetype. The system identifies recurring patterns and their expressions; it does not classify people or impose exhaustive definitions.
 
 ### Relationship to the existing Decision Log
 
@@ -26,17 +26,17 @@ It is not a thirteenth archetype, animal, personality, character or fixed identi
 
 This use of “pure manifestation” is a specific constitutional concept and must not be casually conflated with ordinary manifestations (the observable expressions of archetypes). The exact philosophical relationship between the 13th and the ordinary archetype/manifestation distinction remains subject to owner review.
 
-## 4. Review order
+## 4. Identification order
 
 For each opposing pair, work in this order:
 
-1. **Archetype concept:** What recurring human pattern does it represent? Describe it without moral ranking or permanently classifying people.
-2. **Opposition:** What is the meaningful conceptual tension between the two archetypes?
-3. **Name:** Choose a concise name that expresses the concept. Do not use the animal's name as a substitute.
-4. **Manifestations:** Identify how the pattern may appear in different contexts. Avoid treating one behaviour as the whole archetype.
-5. **Animal / symbol:** Select an animal only after the concept is clear. Treat it as a replaceable metaphor.
-6. **Visual language:** Define visual representation only after the conceptual work.
-7. **Decision record:** Record rationale, alternatives, owner approval, date and version in the Decision Log.
+1. **Recognizable qualities:** What qualities, signals and tendencies may help identify this archetype? Keep observations open and non-exhaustive.
+2. **Relationship:** What differences, tensions, overlaps or complementarities can be observed between the paired archetypes? Do not assume strict opposition or mutual exclusivity.
+3. **Name:** Examine whether the inherited name helps recognition or creates misleading assumptions. Do not force a rename.
+4. **Manifestations:** Identify how qualities may appear differently across contexts, people and moments. Examples are signals, not diagnostic criteria.
+5. **Animal / symbol:** Examine the animal as a symbolic aid to recognition, not as proof, exhaustive definition or boundary.
+6. **Visual language:** Develop visual representation only after the identifying qualities are sufficiently understood.
+7. **Observation record:** Record evidence, alternatives, uncertainties, owner approval where applicable, date and version in the Decision Log.
 
 ## 3. Iterative deconstruction and reformulation
 
@@ -48,9 +48,9 @@ The review is consensus-driven and non-confirmatory. An initial answer is a hypo
 4. Reformulate a more precise or deeper question that addresses those weaknesses.
 5. Answer the reformulated question, explaining what changed and preserving unresolved alternatives.
 6. Test coherence against the other eleven archetypes, the six-pair structure, the archetype/manifestation distinction and the separate role of the 13th.
-7. Record a provisional conclusion, contextual manifestations, uncertainties, evidence and the decision requiring owner approval.
+7. Record a provisional synthesis of identified qualities, contextual manifestations, overlaps, uncertainties, evidence and any decision requiring owner approval.
 
-Repeat when material contradictions, ambiguities or new evidence emerge. Do not defend an initial answer merely because it was written first.
+Repeat when material contradictions, ambiguities or new evidence emerge. Do not defend an initial answer merely because it was written first. The goal is identification and recognition, not a closed definition.
 
 ### Review outcomes
 
@@ -62,7 +62,10 @@ Agreement on this method is not approval of any individual archetype definition.
 
 ## 5. Review principles
 
-- Archetypes are conceptual patterns; manifestations are their contextual expressions.
+- Archetypes are recurring patterns; manifestations are their contextual expressions.
+- The purpose is to identify and recognize, not to define exhaustively or classify people.
+- Identified qualities are open signals, not mandatory checklists or necessary-and-sufficient conditions.
+- Qualities may overlap across archetypes, and the twelve may alternate or coexist in expression.
 - Neither term should be used as a permanent label for a person.
 - An animal is a symbolic representation, not the archetype itself.
 - Names may change when they misrepresent the concept.
@@ -122,4 +125,4 @@ For every pair, record:
 
 ## 9. Completion criteria
 
-A pair is considered reviewed only when both archetype concepts, the opposition rationale, names, possible manifestations and symbolic representations have been considered separately and approved by the project owner. A review may intentionally leave a name, manifestation example or animal unresolved.
+A pair's review may reach a stable working synthesis when its recognizable qualities, contextual manifestations, relationships, overlaps and uncertainties have been examined. This does not close or exhaust the meaning of either archetype. Owner approval is required for decisions that establish or change project canon; identification itself remains open to refinement.
