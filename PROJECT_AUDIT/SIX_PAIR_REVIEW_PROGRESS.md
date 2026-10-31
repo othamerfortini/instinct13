@@ -53,6 +53,8 @@ The objective is not to validate the first answer. It is to discover whether the
 | Pair | Current labels and symbols | Evidence currently available | Status |
 |---|---|---|---|
 | 1 | The Manipulator — Fox ↔ The Scholar / Sage — Owl | Prior discussion described Fox as strategic observation, adaptation, calculation and influence; Owl as discernment, deep observation, knowledge and anticipation. This was previously articulated by the assistant and is not yet recorded as owner-approved definition. | Candidate interpretation; owner review required |
+
+Pair 1's first full deconstruction pass is recorded in [`PAIR_01_DECONSTRUCTION.md`](PAIR_01_DECONSTRUCTION.md). It rejects the initial trait list as insufficient to establish opposition and retains only a provisional hypothesis: insight oriented primarily toward instrumental influence versus insight oriented primarily toward understanding. The underlying axis remains open for owner review.
 | 2 | The Ego — Lion ↔ The Echo — Stag / Deer | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
 | 3 | The Consumer — Pig ↔ The Liberated — Eagle | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
 | 4 | The Follower — Sheep ↔ The Architect — Spider | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
