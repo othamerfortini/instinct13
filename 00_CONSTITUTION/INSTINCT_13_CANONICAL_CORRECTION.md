@@ -1,14 +1,18 @@
 # INSTINCT 13 — Canonical Concept Correction
 
 **Status:** Authoritative correction / supersedes conflicting legacy descriptions  
-**Scope:** Core concept, archetype structure, symbolism and visual identity  
-**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with project-owner decisions and clarification on 2026-10-31.
+**Scope:** Core concept, twelve-part structure, symbolism and visual identity  
+**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with project-owner decisions and terminology clarification on 2026-10-31.
 
-## 1. The 13 is not an archetype
+## Terminology note
+
+The Decision Log dated 2026-08-05 explicitly approved **“Manifestation” replacing “Archetype.”** This correction preserves that recorded decision. References to “archetypes” in source material and legacy artwork are historical terminology unless and until the project owner explicitly reopens and revises the Decision Log. The twelve conceptual positions are referred to here as **manifestations** pending that decision.
+
+## 1. The 13 is not one of the twelve
 
 The number **13 is not an archetype, character, animal, personality, role or named entity**.
 
-It is a **pure manifestation**.
+It is a **pure manifestation**, outside the twelve.
 
 It has:
 - no name;
@@ -18,13 +22,13 @@ It has:
 - no fixed personality, virtue, vice or instinct;
 - no membership in either opposing side.
 
-The 13 must not be depicted as a butterfly, moth, human figure, animal, awakened character or any other identifiable being. It must not be assigned a descriptive archetype title such as “The Awakened”.
+The 13 must not be depicted as a butterfly, moth, human figure, animal, awakened character or any other identifiable being. It must not be assigned a descriptive title such as “The Awakened”.
 
-The 13 may be indicated only through abstract presence or manifestation. It is not another participant in the system; it is not one of the twelve.
+The 13 may be indicated only through abstract presence or manifestation. It is not another participant in the twelve-part structure.
 
-## 2. The twelve archetypes
+## 2. The twelve conceptual manifestations
 
-The system contains **twelve archetypes arranged as six opposing pairs**. Animals are symbolic representations, not the archetypes themselves.
+The system contains **twelve conceptual manifestations arranged as six opposing pairs**. Animals are symbolic representations, not the manifestations themselves.
 
 | Side A | Opposing side B | Review status |
 |---|---|---|
@@ -32,30 +36,30 @@ The system contains **twelve archetypes arranged as six opposing pairs**. Animal
 | The Ego — Lion | The Echo — Stag / Deer | Existing pairing; pending full review |
 | The Consumer — Pig | The Liberated — Eagle | Existing pairing; pending full review |
 | The Follower — Sheep | The Architect — Spider | Existing pairing; pending full review |
-| The Performer — Peacock | **Transformation archetype — name and animal TBD** | Opposition confirmed; concept/name/symbol review in progress |
+| The Performer — Peacock | **Transformation concept — name and animal TBD** | Opposition confirmed; concept/name/symbol review in progress |
 | The Predator — Wolf | The Collector — Raven / Crow | Existing pairing; pending full review |
 
-The project owner confirmed that **The Performer and the transformation archetype are opposites**. The transformation archetype must not be named after its animal: the animal is only one possible metaphor and may change independently of the underlying concept.
+The project owner confirmed that **The Performer and the transformation concept are opposites**. The transformation concept must not be named after its animal: the animal is only one possible metaphor and may change independently of the underlying concept.
 
-The project owner's current conceptual direction for this archetype:
+The project owner's current conceptual direction for this position:
 - limitations are often internal to the individual;
 - learning and experience produce continuous evolution;
 - transformation does not erase the past or rebuild from absolute zero; it incorporates and reorganizes what came before;
 - a change of perspective can reveal a different meaning or possibility without requiring external reality to change;
 - transformation is not necessarily a moral improvement, a superior state, or a predetermined final form.
 
-**The Becoming** is currently a candidate name only. It has not been approved as the final archetype name. The animal representation is also undecided.
+**The Becoming** is currently a candidate name only. It has not been approved as the final name. The animal representation is also undecided.
 
-The legacy *Circle of Instincts* image associated a butterfly with the Performer’s opposite and incorrectly placed “The Awakened” at position 13. The butterfly may remain a historical visual metaphor, but it is not the name of the archetype and cannot represent the 13th manifestation.
+The legacy *Circle of Instincts* image associated a butterfly with the Performer's opposite and incorrectly placed “The Awakened” at position 13. The butterfly may remain a historical visual metaphor, but it is not the name of the transformation concept and cannot represent the 13th.
 
 ## 3. Structural rule
 
-- Six archetypes occupy one side of the opposition structure.
-- Six archetypes occupy the opposing side.
+- Six conceptual manifestations occupy one side of the opposition structure.
+- Six occupy the opposing side.
 - The twelve form six opposing pairs.
 - The 13th is outside the pairs and outside both sides.
-- The 13th has no fixed position as an archetype and no animal or character portrait.
-- Archetype concepts, names, pairings and animal symbols may be reviewed independently; changes must be deliberate and documented.
+- The 13th has no fixed position within the twelve-part structure and no animal or character portrait.
+- Concepts, names, pairings and animal symbols may be reviewed independently; changes must be deliberate and documented.
 
 ## 4. Red is a pulse, not a permanent brand colour
 
@@ -86,4 +90,4 @@ The legacy artwork may remain in the archive as historical material, but it is n
 
 ## 7. Core statement
 
-**Twelve archetypes form six opposing pairs. Their concepts define them; animals are changeable symbolic representations. The thirteenth is not an archetype. It is pure manifestation: nameless, formless, and belonging to neither side.**
+**Twelve conceptual manifestations form six opposing pairs. Their concepts define them; animals are changeable symbolic representations. The 13th is outside the twelve: pure manifestation, nameless, formless, and belonging to neither side.**
