@@ -2,7 +2,7 @@
 
 **Status:** Authoritative correction / supersedes conflicting legacy descriptions  
 **Scope:** Core concept, archetype structure, symbolism and visual identity  
-**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Imported without conceptual expansion.
+**Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with the project owner's explicit confirmation of the sixth opposing pair on 2026-10-31.
 
 ## 1. The 13 is not an archetype
 
@@ -24,7 +24,7 @@ The 13 may be indicated only through abstract presence or manifestation. It is n
 
 ## 2. The twelve archetypes
 
-The system contains **twelve animal archetypes arranged as six opposing pairs**. The established pairings in the *Circle of Instincts* reference are:
+The system contains **twelve animal archetypes arranged as six opposing pairs**:
 
 | Side A | Opposing side B |
 |---|---|
@@ -32,16 +32,18 @@ The system contains **twelve animal archetypes arranged as six opposing pairs**.
 | The Ego — Lion | The Echo — Stag / Deer |
 | The Consumer — Pig | The Liberated — Eagle |
 | The Follower — Sheep | The Architect — Spider |
-| The Performer — Peacock | **Unresolved in the legacy reference** |
+| The Performer — Peacock | **The Butterfly — Butterfly** |
 | The Predator — Wolf | The Collector — Raven / Crow |
 
-The legacy *Circle of Instincts* image lists “The Performer ↔ The Awakened”, but it also places “The Awakened” in position 13 and depicts it as a butterfly. That is internally contradictory. Under this correction, the 13th cannot fill the opposing slot because it is not an archetype. The sixth opposing pair must remain unresolved until the intended twelfth archetype is confirmed from the project owner. Do not silently reclassify the 13th or invent a replacement archetype.
+The project owner explicitly confirmed that **The Performer (Peacock) and The Butterfly (Butterfly) are opposites**. The Butterfly symbolizes transformation: the movement from the ugly to the beautiful, and the emergence of a new form through metamorphosis. The Performer represents outward display and the pursuit of external recognition. These are opposing manifestations, not a moral ranking.
+
+The legacy *Circle of Instincts* image incorrectly associated “The Awakened” and the butterfly with position 13. That legacy association is superseded: **The Butterfly is the twelfth archetype; the 13th remains formless and is not a butterfly.**
 
 ## 3. Structural rule
 
 - Six archetypes occupy one side of the opposition structure.
 - Six archetypes occupy the opposing side.
-- The twelve are intended to form six opposing pairs. Five pairs are identifiable in the current Circle reference; the sixth requires confirmation because the legacy file incorrectly uses the 13th manifestation as an archetype.
+- The twelve form six opposing pairs.
 - The 13th is outside the pairs and outside both sides.
 - The 13th has no fixed position as an archetype and no animal or character portrait.
 
@@ -74,4 +76,4 @@ The legacy artwork may remain in the archive as historical material, but it is n
 
 ## 7. Core statement
 
-**Twelve archetypes are arranged as six opposing pairs. The thirteenth is not an archetype. It is pure manifestation: nameless, formless, and belonging to neither side. The sixth pair must be confirmed rather than inferred from contradictory legacy artwork.**
+**Twelve archetypes are arranged as six opposing pairs. The Butterfly opposes The Performer. The thirteenth is not an archetype. It is pure manifestation: nameless, formless, and belonging to neither side.**
