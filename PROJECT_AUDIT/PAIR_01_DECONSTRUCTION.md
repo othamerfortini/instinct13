@@ -219,3 +219,74 @@ Identification is exploratory and revisable:
 
 The purpose is recognition, not classification. The pair may contain contrast and complementarity, but neither should be forced into a binary. The earlier assistant-generated influence-versus-understanding axis remains rejected. Pair 1 stays open for further identification and owner-led refinement.
 
+
+## 11. Identification map — open observations, not a definition
+
+This section applies the owner's instruction to identify rather than define. It is an exploratory map. No item below is a required trait, an exclusive property or a test for assigning an archetype to a person.
+
+### 11.1 Fox — owner-grounded starting point
+
+**Directly grounded in owner guidance:**
+- astuteness / cunning;
+- cunning can be constructive or beneficial, not inherently negative.
+
+**Exploratory signals to investigate (assistant hypotheses, not owner-confirmed):**
+- noticing openings or possibilities that are not immediately obvious;
+- adapting an approach when circumstances change;
+- finding an indirect or resourceful route through a constraint;
+- reading a situation and responding with timing;
+- combining alertness with practical action.
+
+These are prompts for observation, not claims that every Fox expression contains them. A future review should test whether they actually resonate with the intended symbolism.
+
+### 11.2 Owl — owner-grounded starting point
+
+**Directly grounded in owner guidance:**
+- profound or encompassing knowledge, expressed through the image “the owl that knows everything.”
+
+**Exploratory signals to investigate (assistant hypotheses, not owner-confirmed):**
+- seeing connections across different pieces of information;
+- retaining or integrating knowledge over time;
+- recognizing patterns that are not immediately visible;
+- considering a situation from a wider perspective;
+- bringing depth or context to an interpretation.
+
+The phrase “knows everything” is treated as symbolic emphasis, not a literal requirement or a claim of infallibility. These exploratory signals remain open to correction.
+
+### 11.3 Shared or overlapping territory
+
+The following may appear in either symbolism and must not be used alone to distinguish the two:
+- intelligence;
+- observation;
+- perception;
+- anticipation;
+- learning;
+- situational awareness.
+
+Overlap is not a flaw in the model. It is expected that archetypes may share qualities and that their manifestations may alternate or coexist.
+
+### 11.4 A tentative difference to investigate — not a pair definition
+
+A possible distinction worth examining is the *quality of emphasis*:
+- Fox symbolism may draw attention to astuteness in navigating a particular situation.
+- Owl symbolism may draw attention to breadth or depth of knowledge.
+
+This is deliberately phrased as a difference in emphasis, not a boundary. A Fox-like expression may rely on deep knowledge; an Owl-like expression may be highly astute in a concrete situation. Neither quality belongs exclusively to one side.
+
+### 11.5 Contextual examples for recognition
+
+These examples illustrate possible expressions only; they do not diagnose or classify anyone:
+- Faced with an unexpected obstacle, a resourceful adjustment may be recognized as Fox-like.
+- Faced with a complex subject, connecting distant pieces of knowledge may be recognized as Owl-like.
+- A person who understands a complex situation and then finds a clever practical route may express both qualities in the same episode.
+- A person may express one quality in one context and another at a different moment.
+
+### 11.6 Questions for the next identification cycle
+
+1. When you say the Fox is astute, what makes that astuteness recognizable beyond simply being clever?
+2. When you say the Owl “knows everything,” is the emphasis on accumulated knowledge, depth, broad perspective, intuition, wisdom, or something that these words do not yet capture?
+3. Is the key difference between Fox and Owl a difference in *kind*, *emphasis*, *scale*, *timing* or something else?
+4. What does the inherited pair communicate when both qualities are present together?
+
+These are research prompts, not requests to force a final answer. The review should keep collecting observations and revising its questions.
+
