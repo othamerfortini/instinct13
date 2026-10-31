@@ -7,7 +7,7 @@
 
 - The twelve positions are **archetypes**: recurring patterns of human experience.
 - Each archetype can manifest in different ways according to person, context, experience and time.
-- A person is not an archetype and must not be permanently classified by one.
+- A person is not an archetype and must not be permanently classified by one. The twelve archetypes can alternate in their expression within a person or across situations; pairing does not imply that a person is fixed to one side or that the two sides are mutually exclusive.
 - Each archetype has one animal as its current symbolic representation; the animal is not the archetype and may be changed independently if the concept warrants it.
 - The twelve are organized as six opposing pairs.
 - The 13th is not one of the twelve and remains nameless, formless and without an animal or character representation.
@@ -54,7 +54,7 @@ The objective is not to validate the first answer. It is to discover whether the
 |---|---|---|---|
 | 1 | The Manipulator — Fox ↔ The Scholar / Sage — Owl | Prior discussion described Fox as strategic observation, adaptation, calculation and influence; Owl as discernment, deep observation, knowledge and anticipation. This was previously articulated by the assistant and is not yet recorded as owner-approved definition. | Candidate interpretation; owner review required |
 
-Pair 1's first full deconstruction pass is recorded in [`PAIR_01_DECONSTRUCTION.md`](PAIR_01_DECONSTRUCTION.md). It rejects the initial trait list as insufficient to establish opposition and retains only a provisional hypothesis: insight oriented primarily toward instrumental influence versus insight oriented primarily toward understanding. The underlying axis remains open for owner review.
+Pair 1's deconstruction record is in [`PAIR_01_DECONSTRUCTION.md`](PAIR_01_DECONSTRUCTION.md). The owner rejected the assistant's proposed influence-versus-understanding axis. Owner guidance: the Owl symbolizes profound or encompassing knowledge; Fox-like cunning can be constructive; and the twelve archetypes can alternate in their expression. Pair 1 remains open while the distinct qualities and their relationship are examined without moral polarity or fixed classification.
 | 2 | The Ego — Lion ↔ The Echo — Stag / Deer | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
 | 3 | The Consumer — Pig ↔ The Liberated — Eagle | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
 | 4 | The Follower — Sheep ↔ The Architect — Spider | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
@@ -72,6 +72,7 @@ An earlier discussion described six passive, six active and one neutral position
 - Do not classify people as fixed types.
 - Do not assume one side is good, evolved, healthy or superior and the other bad or inferior.
 - Do not assume every pair is a simple binary or that the two sides exhaust human behaviour.
+- Do not interpret an opposing pair as mutually exclusive states or permanent classifications. The twelve archetypes can alternate in their expression; the exact mechanics of alternation remain open for review.
 - Do not force a mapping to DQD dimensions.
 - Do not rename or replace the 13th.
 - Distinguish owner-approved concepts from assistant-generated hypotheses and legacy labels.
