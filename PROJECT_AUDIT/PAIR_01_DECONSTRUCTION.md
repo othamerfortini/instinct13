@@ -131,4 +131,55 @@ Before closing Pair 1:
 4. Examine whether the pair remains distinct from the other five once their definitions are developed.
 5. Only then consider names and animal symbols.
 
+
+## 9. Owner correction and second deconstruction pass
+
+The project owner rejected the revised axis in Section 5:
+
+> “Não... Porque a coruja que tudo sabe.... A raposa pode ser astuto no bom.. por isso os doze podem se alternar entre si”
+
+This is owner-authored conceptual evidence and supersedes the assistant's proposed opposition between instrumental influence and understanding.
+
+### What this correction establishes
+
+- The Owl's symbolic meaning includes profound or encompassing knowledge — expressed by the owner's phrase “the owl that knows everything.” This is symbolic language, not a literal claim that an archetype is omniscient.
+- Fox-like cunning is not inherently negative. Astuteness may be constructive, beneficial or wisely applied.
+- The twelve archetypes can alternate within a person or across situations. They are not permanent identities, mutually exclusive personality types or moral categories.
+- An opposing pair therefore need not mean that one person can express only one side at a time, or that the sides are mutually exclusive in all circumstances.
+
+### Deconstructing the rejected axis
+
+The earlier contrast — using insight to influence outcomes versus using insight to understand reality — imposed a purpose-based distinction that the owner did not endorse. It also risked assigning the Fox a manipulative motive and narrowing the Owl to passive understanding. Both assumptions are rejected.
+
+**Status of that axis: Rejected.** It must not be carried forward as the pair's definition.
+
+### Reformulated question
+
+**What do Fox and Owl each symbolize as distinct but compatible archetypal patterns, and what is the meaningful tension or complementarity between those patterns if a person can alternate between all twelve archetypes?**
+
+This question no longer assumes moral polarity, fixed identity or mutual exclusivity.
+
+### Revised working interpretation
+
+At this stage, only a limited interpretation is warranted:
+
+- **Fox:** astuteness, resourcefulness and adaptive intelligence; these qualities may be used constructively or otherwise. The owner explicitly rejects treating cunning as inherently bad.
+- **Owl:** profound knowledge or encompassing wisdom, as expressed symbolically by “the owl that knows everything.”
+
+These are starting points for investigation, not complete definitions. The exact difference between astuteness and profound knowledge remains to be explored. It is also unresolved whether the pair's relationship is best described as opposition, complementarity, alternation, balance or another form of tension.
+
+### New system-level principle to test across all six pairs
+
+**The twelve archetypes can alternate in their expression.** Pairing does not make a person one side or the other, and it does not imply a permanent classification. The pair's conceptual contrast must be meaningful without requiring moral judgement or absolute exclusion.
+
+This principle is now owner-authored and should guide the review of all six pairs. The exact mechanics of alternation — whether sequential, situational, simultaneous in different domains, or otherwise — remain open rather than assumed.
+
+### Current conclusion
+
+- The assistant's initial definitions remain unapproved hypotheses.
+- The assistant's first revised axis is rejected by the owner.
+- The owner's symbolic guidance for Fox and Owl is recorded above.
+- Pair 1 remains open. No final definition, name change or animal change is approved.
+- The next analysis must investigate distinct qualities and their relationship without forcing a good/bad or control/understanding dichotomy.
+
 ---
