@@ -1,33 +1,22 @@
-# Instinct 13 — Manifestation Review Working Register
+# Instinct 13 — Archetype Review Working Register
 
 **Status:** Working document; non-normative until reviewed and approved by the project owner.  
 **Purpose:** Review the twelve conceptual positions and their inherited labels, pairings and animal symbols without treating legacy material as unquestionable canon.
 
-## 1. Terminology distinction: archetype vs. manifestation
+## 1. Confirmed distinction: archetype vs. manifestation
 
-The project owner has clarified that **Archetype** and **Manifestation** must be distinguished; they are not interchangeable terms.
+The project owner has confirmed that **the twelve are archetypes**: recurring patterns of human experience. Each archetype can manifest in different ways depending on the person, context, experiences and moment in time.
 
-For the purposes of this review, the working distinction is:
+- **Archetype:** the underlying recurring pattern.
+- **Manifestation:** a particular expression of that pattern in a given context — through behaviour, choices, reactions, relationships or other forms.
+- **Person:** is not an archetype and must not be permanently classified by one. A person may express different archetypes in different contexts or at different times.
+- **Animal:** is a symbolic representation of an archetype, not the archetype itself and not a manifestation.
 
-- **Archetype:** an underlying recurring conceptual pattern or structure. It describes *what pattern is being considered*.
-- **Manifestation:** the concrete, contextual expression through which a pattern becomes observable — in behaviour, choices, reactions, relationships or other forms. It describes *how, when and in what context the pattern appears*.
-
-Consequences of this distinction:
-- A person is not an archetype and must not be permanently classified by one.
-- The same person may express different archetypal patterns in different contexts or at different times.
-- One archetype may have multiple manifestations; manifestations can vary as context, awareness and choices change.
-- An animal is neither the archetype nor its manifestation. It is a symbolic representation that may help communicate the archetype.
-- Reviewing an archetype means reviewing its underlying concept, not merely changing its animal or describing one observed behaviour.
+One archetype may have multiple manifestations. A single behaviour must not be mistaken for the complete definition of an archetype. The system observes recurring patterns and their expressions; it does not classify people.
 
 ### Relationship to the existing Decision Log
 
-The Decision Log dated 2026-08-05 records: **“Approved term 'Manifestation' replacing 'Archetype'.”** That entry now appears potentially ambiguous in light of the owner's clarification.
-
-Do not silently delete or rewrite the historical decision. It must be revisited explicitly to determine whether it intended:
-1. to replace the word *Archetype* throughout the entire conceptual model; or
-2. to distinguish the observable expressions (*Manifestations*) from the underlying archetypes, while retaining both terms for different layers.
-
-Until the owner resolves the historical scope, this register uses both terms according to the working distinction above and marks the constitutional terminology decision as requiring reconciliation.
+The Decision Log dated 2026-08-05 records: **“Approved term 'Manifestation' replacing 'Archetype'.”** Preserve this historical entry; do not silently rewrite it. Its wording must be explicitly reconciled with the now-confirmed model, in which Archetype names the underlying pattern and Manifestation names its contextual expression.
 
 ## 2. The 13th: separate and exceptional use
 
@@ -64,7 +53,7 @@ For each opposing pair, work in this order:
 
 ## 5. Pair register
 
-| Pair | Existing archetype / label A | Existing animal A | Existing archetype / label B | Existing animal B | Status |
+| Pair | Archetype A | Existing animal A | Archetype B | Existing animal B | Status |
 |---|---|---|---|---|---|
 | 1 | The Manipulator | Fox | The Scholar | Owl | Not yet reviewed |
 | 2 | The Ego | Lion | The Echo | Stag / Deer | Not yet reviewed |
