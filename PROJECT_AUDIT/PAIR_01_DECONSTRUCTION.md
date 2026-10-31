@@ -2,7 +2,7 @@
 
 **Pair:** The Manipulator — Fox ↔ The Scholar — Owl  
 **Review status:** Provisional analysis; not owner-approved.  
-**Scope:** Test whether the inherited names and proposed conceptual opposition form a coherent pair. This record does not approve names, definitions or animal symbols.
+**Scope:** Identify recognizable qualities and possible expressions of the inherited archetypes without fixing their meaning, classifying people or forcing an exclusive opposition. This record does not approve names or animal symbols.
 
 ## 1. Initial question
 
@@ -183,3 +183,39 @@ This principle is now owner-authored and should guide the review of all six pair
 - The next analysis must investigate distinct qualities and their relationship without forcing a good/bad or control/understanding dichotomy.
 
 ---
+
+## 10. Owner clarification: identify, do not define
+
+The project owner clarified the fundamental purpose of this work:
+
+> “Não queremos definir... Mas identificar.”
+
+This supersedes the framing used in earlier sections wherever it treats the task as producing closed definitions. Earlier questions and assistant-generated interpretations remain in the record as review history, but they are not the governing method.
+
+### Methodological consequence
+
+The objective is to **identify** recurring qualities, signals, tendencies, symbolic associations and contextual manifestations that help recognize an archetype. The objective is not to prescribe an exhaustive essence, create a rigid checklist, establish necessary-and-sufficient conditions or decide what a person is.
+
+Identification is exploratory and revisable:
+- gather qualities and possible signs without assuming that any one is exclusive to an archetype;
+- examine how the qualities may appear differently across people, contexts and moments;
+- allow qualities to overlap across archetypes;
+- allow the twelve archetypes to alternate in their expression;
+- observe coexistence where it occurs rather than forcing a single label;
+- keep animal symbolism as a useful symbolic reference, not a proof or a boundary;
+- preserve ambiguity and competing interpretations where evidence does not settle them.
+
+### Pair 1: identification prompts, not definitions
+
+**Fox — qualities to investigate:** astuteness, constructive cunning, resourcefulness, adaptive intelligence and situational strategy. These are owner-guided points of departure, not an exhaustive list.
+
+**Owl — qualities to investigate:** profound knowledge, wisdom and broad or encompassing understanding. The owner's phrase “the owl that knows everything” is a symbolic pointer, not a literal or closed definition.
+
+### Reformulated question
+
+**What qualities, signals and contextual expressions help us recognize Fox-like astuteness and Owl-like profound knowledge, how can those qualities overlap or alternate, and what differences remain meaningful without turning either archetype into a fixed definition?**
+
+### Current position
+
+The purpose is recognition, not classification. The pair may contain contrast and complementarity, but neither should be forced into a binary. The earlier assistant-generated influence-versus-understanding axis remains rejected. Pair 1 stays open for further identification and owner-led refinement.
+
