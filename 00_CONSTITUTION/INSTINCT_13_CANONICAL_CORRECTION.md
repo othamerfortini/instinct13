@@ -4,9 +4,18 @@
 **Scope:** Core concept, twelve-part structure, symbolism and visual identity  
 **Source provenance:** User Library document `INSTINCT_13_CANONICAL_CORRECTION.md`, created 2026-10-31. Updated with project-owner decisions and terminology clarification on 2026-10-31.
 
-## Terminology note
+## Terminology: archetypes and manifestations
 
-The Decision Log dated 2026-08-05 explicitly approved **“Manifestation” replacing “Archetype.”** This correction preserves that recorded decision. References to “archetypes” in source material and legacy artwork are historical terminology unless and until the project owner explicitly reopens and revises the Decision Log. The twelve conceptual positions are referred to here as **manifestations** pending that decision.
+The project owner has confirmed that the **twelve are archetypes**: recurring patterns of human experience. Each archetype can manifest in different ways depending on the person, context, experiences and moment in time.
+
+- **Archetype:** the underlying recurring pattern.
+- **Manifestation:** a particular expression of that pattern in a given context.
+- **Person:** is not an archetype and must not be permanently classified by one.
+- **Animal:** is a symbolic representation of an archetype, not the archetype itself and not a manifestation.
+
+One archetype may have multiple manifestations. The system observes patterns and their expressions; it does not classify people.
+
+The Decision Log dated 2026-08-05 records: **“Approved term 'Manifestation' replacing 'Archetype'.”** That historical entry is preserved and must not be silently rewritten. Its wording now requires explicit reconciliation with the confirmed distinction above.
 
 ## 1. The 13 is not one of the twelve
 
@@ -26,9 +35,9 @@ The 13 must not be depicted as a butterfly, moth, human figure, animal, awakened
 
 The 13 may be indicated only through abstract presence or manifestation. It is not another participant in the twelve-part structure.
 
-## 2. The twelve conceptual manifestations
+## 2. The twelve archetypes
 
-The system contains **twelve conceptual manifestations arranged as six opposing pairs**. Animals are symbolic representations, not the manifestations themselves.
+The system contains **twelve archetypes arranged as six opposing pairs**. Each archetype can have multiple contextual manifestations. Animals are symbolic representations of the archetypes, not the archetypes themselves.
 
 | Side A | Opposing side B | Review status |
 |---|---|---|
@@ -54,9 +63,10 @@ The legacy *Circle of Instincts* image associated a butterfly with the Performer
 
 ## 3. Structural rule
 
-- Six conceptual manifestations occupy one side of the opposition structure.
+- Six archetypes occupy one side of the opposition structure.
 - Six occupy the opposing side.
 - The twelve form six opposing pairs.
+- Each archetype may manifest in different ways depending on context.
 - The 13th is outside the pairs and outside both sides.
 - The 13th has no fixed position within the twelve-part structure and no animal or character portrait.
 - Concepts, names, pairings and animal symbols may be reviewed independently; changes must be deliberate and documented.
@@ -90,4 +100,4 @@ The legacy artwork may remain in the archive as historical material, but it is n
 
 ## 7. Core statement
 
-**Twelve conceptual manifestations form six opposing pairs. Their concepts define them; animals are changeable symbolic representations. The 13th is outside the twelve: pure manifestation, nameless, formless, and belonging to neither side.**
+**Twelve archetypes form six opposing pairs. Each represents a recurring pattern of human experience and can manifest in different ways. Animals are changeable symbolic representations. The 13th is outside the twelve: pure manifestation, nameless, formless, and belonging to neither side.**
