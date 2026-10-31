@@ -9,7 +9,7 @@ The project owner has confirmed that **the twelve are archetypes**: recurring pa
 
 - **Archetype:** the underlying recurring pattern.
 - **Manifestation:** a particular expression of that pattern in a given context — through behaviour, choices, reactions, relationships or other forms.
-- **Person:** is not an archetype and must not be permanently classified by one. A person may express different archetypes in different contexts or at different times.
+- **Person:** is not an archetype and must not be permanently classified by one. The twelve archetypes can alternate in their expression within a person or across situations. A person may express different archetypes in different contexts or at different times.
 - **Animal:** is a symbolic representation of an archetype, not the archetype itself and not a manifestation.
 
 One archetype may have multiple manifestations. A single behaviour must not be mistaken for the complete definition of an archetype. The system observes recurring patterns and their expressions; it does not classify people.
@@ -67,6 +67,7 @@ Agreement on this method is not approval of any individual archetype definition.
 - An animal is a symbolic representation, not the archetype itself.
 - Names may change when they misrepresent the concept.
 - Pairings may change if the conceptual opposition does not hold.
+- An opposing pair does not imply mutually exclusive states, fixed personality types or a permanent classification of a person. The twelve archetypes can alternate in their expression; the exact mechanics of alternation must be investigated rather than assumed.
 - No side is inherently better, more evolved or morally superior to its opposite.
 - Avoid definitions that assume a fixed endpoint or universal human classification.
 - Preserve uncertainty explicitly; do not fill gaps by inference.
@@ -77,7 +78,7 @@ Agreement on this method is not approval of any individual archetype definition.
 
 | Pair | Archetype A | Existing animal A | Archetype B | Existing animal B | Status |
 |---|---|---|---|---|---|
-| 1 | The Manipulator | Fox | The Scholar | Owl | Not yet reviewed |
+| 1 | The Manipulator | Fox | The Scholar | Owl | Under deconstruction; owner correction recorded, definitions and relationship still open |
 | 2 | The Ego | Lion | The Echo | Stag / Deer | Not yet reviewed |
 | 3 | The Consumer | Pig | The Liberated | Eagle | Not yet reviewed |
 | 4 | The Follower | Sheep | The Architect | Spider | Not yet reviewed |
