@@ -81,14 +81,14 @@ Agreement on this method is not approval of any individual archetype definition.
 
 | Pair | Archetype A | Existing animal A | Archetype B | Existing animal B | Status |
 |---|---|---|---|---|---|
-| 1 | The Manipulator (inherited name; under review) | Fox | The Scholar (inherited name; under review) | Owl | Fox meaning approved 2026-11-01; Owl meaning, opposition, both names, animal review and visual identities remain open |
+| 1 | The Operator (approved) | Fox (approved) | The Cartographer (approved) | Owl (approved) | Meaning, names and symbolic animals owner-approved 2026-11-01; conceptual visual directions approved; final artwork open |
 | 2 | The Ego | Lion | The Echo | Stag / Deer | Not yet reviewed |
 | 3 | The Consumer | Pig | The Liberated | Eagle | Not yet reviewed |
 | 4 | The Follower | Sheep | The Architect | Spider | Not yet reviewed |
 | 5 | The Performer | Peacock | Transformation archetype — name TBD | TBD; butterfly is only a legacy metaphor | Opposition confirmed; concept and name under review |
 | 6 | The Predator | Wolf | The Collector | Raven / Crow | Not yet reviewed |
 
-These are inherited working labels and pairings, not a declaration that all six pairs have passed review.
+Pairs 2–6 remain inherited working labels and pairings, not a declaration that they have passed review. Pair 1 has since completed owner review as recorded in Section 10.
 
 ## 7. Pair 5 — current working notes
 
@@ -126,3 +126,38 @@ For every pair, record:
 ## 9. Completion criteria
 
 A pair's review may reach a stable working synthesis when its recognizable qualities, contextual manifestations, relationships, overlaps and uncertainties have been examined. This does not close or exhaust the meaning of either archetype. Owner approval is required for decisions that establish or change project canon; identification itself remains open to refinement.
+
+
+## 10. Latest owner-approved status — Pair 1 (2026-11-01)
+
+**Pair 1 is canonically approved and integrated.** This section supersedes earlier Pair 1 rows and pending-status notes in this register wherever they conflict.
+
+| Element | Approved result | Scope |
+|---|---|---|
+| Archetype A | **The Operator** | Name and meaning approved |
+| Animal A | **Fox** | Symbolic representation approved |
+| Symbolic positioning A | **The Orchestrating Fox** | Active orchestration; awake observation, environmental command and readiness to intervene |
+| Archetype B | **The Cartographer** | Name and meaning approved |
+| Animal B | **Owl** | Symbolic representation approved |
+| Symbolic positioning B | **Panoramic perception** | Intuitive recognition of invisible architectures and systemic interdependencies |
+| Pair tension | **Orchestration ↔ panoramic apprehension** | Structural tension, not strict binary or mutual exclusion |
+| Visual guidance | Both directions owner-approved as conceptual guidance | Final card artwork and production specifications remain open |
+
+### Owner-approved identification notes
+
+**The Operator — Fox:** Reads systems and circumstances in order to reorganize variables, instrumentalize constraints, circumvent or subvert the original logic, and create the conditions for an intended result. Advantage is the efficacy of the agent's intention, not necessarily personal profit. Constructive, diplomatic, altruistic and destructive expressions remain possible.
+
+**The Cartographer — Owl:** Perceives the architecture and interdependencies of a situation before exhaustive collection of details. Synthesis, theory and explanation are subsequent tools for communicating the perception, not the primary source of it. The Owl is not omniscient or infallible.
+
+**The Cartographer's Shadow:** Paralysis by complexity, attachment to obsolete maps and intellectualization as a defence against affective participation. Empathy remains possible; the defensive pattern is avoiding personal vulnerability by observing rather than participating.
+
+### Visual direction boundaries
+
+- The Fox should appear alert, present in the environment and ready to intervene; avoid defaulting to furtive malice, fear or permanent concealment.
+- The Owl should communicate an awake, expansive nocturnal gaze and the living geometry of a system; avoid academic props or passive observation as its defining image.
+- The Owl Shadow concept of an immobile Owl enclosed by obsolete meridians and orbital diagrams while the living forest changes around it is approved for exploration.
+- These are approved conceptual directions, not final artwork or a complete card-design specification.
+
+### Cross-system constraints
+
+Pair 1 approval does not authorize permanent classification of people, exhaustive definitions, moral ranking or a strict binary. The twelve archetypes may overlap, alternate or coexist in contextual expression. Pairs 2–6 and the separate constitutional role of the 13th remain unchanged and open where previously unresolved.
