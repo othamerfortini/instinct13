@@ -1,7 +1,7 @@
 # Instinct 13 — Pair 1 Deconstruction Record
 
-**Pair:** The Manipulator — Fox ↔ The Scholar — Owl  
-**Review status:** Pair 1 remains under review; Fox meaning explicitly owner-approved on 2026-11-01. Other Pair 1 decisions remain pending.  
+**Pair:** The Operator — Fox ↔ The Cartographer — Owl  
+**Review status:** Pair 1 meanings, names and symbolic animals formally owner-approved on 2026-11-01; conceptual review and canon integration complete. Final artwork remains a production task.  
 **Scope:** Identify recognizable qualities and possible expressions of the inherited archetypes without fixing their meaning, classifying people or forcing an exclusive opposition. This record does not approve names or animal symbols.
 
 ## 1. Initial question
@@ -370,3 +370,62 @@ Explore **tactical ingenuity / adaptive strategic navigation**: reading a system
 The Tactician is the strongest of the four current candidates as a semantic base, but it should be enriched with the Fox's adaptive and subversive quality rather than accepted unchanged. This is a search direction, not a proposed final name.
 
 **Limits:** No replacement name is approved. The Fox meaning remains approved; the Owl concept, final pair relationship, animal-symbol validation and visual identity remain open. Do not proceed to animal or visual-identity approval on the assumption that naming is complete.
+
+
+---
+
+## 14. Final owner-approved synthesis — Pair 1 (2026-11-01)
+
+**Status:** Pair 1's meanings, names and symbolic animals are formally approved by the project owner. The conceptual review and canon integration are complete. The record remains open to future refinement of manifestations and visual execution; approval does not create exhaustive definitions.
+
+### 14.1 The Operator — Fox
+
+**Name:** The Operator  
+**Animal:** Fox  
+**Symbolic positioning:** The Orchestrating Fox
+
+**Owner-approved nucleus:** Tactical astuteness expressed through the active orchestration of circumstances and systems to produce the outcome intended by the agent.
+
+Understanding the system is a necessary phase of gathering situational intelligence, not the final objective. The Operator identifies how the system works so that it can reorganize variables, instrumentalize constraints, circumvent or subvert the system's original logic, and create an opportunity rather than merely notice one already present.
+
+**Advantage** means the successful realization of the agent's intention — the effective imposition of its will on the situation or board. It does not require selfishness, material gain or harm to others. A person who astutely resolves a conflict between other people without personal profit may still express the pattern: the advantage is the successful orchestration itself.
+
+The underlying capacity is morally neutral. It may manifest through diplomacy, creative problem-solving and constructive intervention, or through cynical exploitation and destructive instrumentalization. The name does not turn one possible shadow expression into the definition.
+
+**Symbolic and visual direction:** The Fox is alert, perceptive, present in the environment and ready to intervene. The representation must communicate command of circumstances and active orchestration, not fear, flight, furtive concealment or caricatured malice. This is approved visual guidance; final artwork remains a production task.
+
+### 14.2 The Cartographer — Owl
+
+**Name:** The Cartographer  
+**Animal:** Owl
+
+**Owner-approved nucleus:** Panoramic perception of invisible architectures and intuitive recognition of systemic interdependencies.
+
+The Owl perceives the architecture first. It can recognize that apparently separate events, forces or perspectives belong to a wider configuration before it has collected every detail. Synthesis, theory, mapping and explanation are subsequent means of translating that perception into communicable form; they are not the primary mechanism by which the perception originates.
+
+This capacity does not imply omniscience, infallibility, a final absolute truth or immunity from revision. The Owl's mental map must remain answerable to a changing territory.
+
+**Shadow expressions identified and approved:** paralysis by complexity; attachment to an obsolete mental map; and intellectualization used as a defence against affective participation and personal vulnerability. The Owl may understand another person's pain and still use that understanding to avoid exposing its own. The problem is not an absence of empathy, but the substitution of observation for participation.
+
+**Symbolic and visual direction:** An awake, expansive nocturnal gaze that apprehends the living geometry of the ecosystem. Avoid academic props and the passive image of an Owl merely watching. The proposed Shadow composition — an immobile Owl enclosed by obsolete meridians and orbital diagrams while the living forest changes around it — is an approved conceptual direction for exploration, not final artwork.
+
+### 14.3 The pair's tension
+
+**The Operator reorganizes the board; The Cartographer apprehends its invisible architecture.**
+
+The Operator acts on the configuration to produce an intended result. The Cartographer perceives the interdependencies that constitute the configuration, but risks remaining outside action because every intervention appears to simplify a complex whole.
+
+This is a structural tension, not a strict binary. The two patterns can overlap, alternate or coexist in a person's contextual manifestations. Neither name is a permanent identity or a diagnostic label.
+
+### 14.4 Decisions superseded and boundaries preserved
+
+This synthesis supersedes earlier provisional references in this record to:
+- The Manipulator as the active Fox name;
+- The Scholar as the active Owl name;
+- the absence of an approved replacement name;
+- pending approval of the two animal symbols;
+- the earlier, rejected opposition axes and provisional definitions.
+
+Those earlier passages remain in place as historical evidence of the deconstruction process; they must not be treated as current status.
+
+The approval covers the two meanings, names, animals and conceptual visual directions. It does not approve final card artwork, a complete deck design system, the other five pairs, or any change to the constitutional definition of the 13th.
