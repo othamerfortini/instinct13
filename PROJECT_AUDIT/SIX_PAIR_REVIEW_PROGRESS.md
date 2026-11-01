@@ -52,7 +52,7 @@ The objective is not to validate the first answer or produce a closed definition
 
 | Pair | Current labels and symbols | Evidence currently available | Status |
 |---|---|---|---|
-| 1 | The Manipulator — Fox ↔ The Scholar / Sage — Owl | Prior discussion described Fox as strategic observation, adaptation, calculation and influence; Owl as discernment, deep observation, knowledge and anticipation. This was previously articulated by the assistant and is not yet recorded as owner-approved definition. | Candidate interpretation; owner review required |
+| 1 | The Operator — Fox ↔ The Cartographer — Owl | Owner-approved meanings, names, animals and conceptual visual directions (2026-11-01). Operator: active orchestration of systems and variables to realize an intended outcome. Cartographer: panoramic perception of invisible architectures and systemic interdependencies. | **Complete — canon approved; final artwork remains open** |
 
 Pair 1's deconstruction record is in [`PAIR_01_DECONSTRUCTION.md`](PAIR_01_DECONSTRUCTION.md). Its latest section adds an open identification map separating owner-grounded starting points from assistant-generated exploratory signals, shared qualities, possible contextual examples and questions for the next cycle. This is not a definition or classification tool. The owner rejected the assistant's proposed influence-versus-understanding axis. Owner guidance: the Owl symbolizes profound or encompassing knowledge; Fox-like cunning can be constructive; and the twelve archetypes can alternate in their expression. Pair 1 remains open. The owner clarified that the goal is to identify, not define: investigate Fox-like astuteness (which can be constructive) and Owl-like profound knowledge, while allowing overlap, alternation and contextual expression. See [`PAIR_01_DECONSTRUCTION.md`](PAIR_01_DECONSTRUCTION.md).
 | 2 | The Ego — Lion ↔ The Echo — Stag / Deer | Names, symbols and opposition are present in legacy material. No sufficiently grounded owner-authored definitions or opposition rationale have been recovered. | Open; do not infer |
@@ -80,7 +80,7 @@ An earlier discussion described six passive, six active and one neutral position
 
 ## Next review sequence
 
-Proceed with Pairs 1, 2, 3, 4 and 6 using the evidence above. Pair 1 has a preliminary conceptual hypothesis to test; Pairs 2, 3, 4 and 6 require concept-level review before names or symbols can be treated as meaningful. Pair 5 remains in progress and should not be declared complete until its concept, name and symbol are resolved.
+Pair 1 is complete and must no longer be treated as awaiting conceptual, naming or animal approval. The next pair is selected by the project owner; do not infer or begin a different pair without that selection. Pairs 2, 3, 4 and 6 remain open. Pair 5 remains in progress and must not be declared complete until its concept, name and symbol are resolved.
 
 
 ## Latest owner decision — 2026-11-01
@@ -99,3 +99,17 @@ The project owner explicitly **rejected “The Manipulator”** as the active na
 The replacement remains open. The four owner-supplied candidates — **The Tactician, The Pragmatist, The Opportunist, The Navigator** — have been assessed but none is approved. The current search direction is **tactical ingenuity / adaptive strategic navigation**: reading a system, recognizing leverage points and finding unconventional ways through, around or against constraints. The Tactician is the strongest current semantic base, but its possible lack of irreverence and subversion remains unresolved.
 
 **Next step:** Continue name exploration within this semantic territory. Do not treat any candidate as final, and do not proceed to animal-symbol or visual-identity approval.
+
+
+## Latest owner decision — 2026-11-01: Pair 1 complete
+
+The project owner formally approved:
+- **The Operator — Fox:** tactical astuteness as active orchestration of circumstances and systems to produce the intended outcome. Advantage means successful realization of the agent's intention, not necessarily selfish or material gain. The Fox creates opportunities by reorganizing variables; it is not merely reactive to opportunities already present.
+- **The Cartographer — Owl:** panoramic perception of invisible architectures and intuitive recognition of systemic interdependencies. The Owl perceives the architecture before exhaustive data collection; synthesis and explanation follow as tools of communication.
+- **Pair tension:** active orchestration versus panoramic apprehension. This is not a strict binary; archetypes may overlap, alternate or coexist contextually.
+- **Animals:** Fox and Owl approved as symbolic representations.
+- **Visual direction:** The Orchestrating Fox (awake, present, ready to intervene) and the Cartographer Owl (wide nocturnal gaze, living geometry). The Owl's Shadow concept of an immobile bird enclosed by obsolete meridians and orbital diagrams is approved for exploration. Final artwork remains open.
+
+The Cartographer's Shadow includes paralysis by complexity, attachment to obsolete mental maps and intellectualization used to avoid affective participation. This does not imply absence of empathy.
+
+**Integration status:** Pair 1's conceptual review and canon integration are complete. Historical pending statuses earlier in this file are superseded by this owner decision. No other pair is implicitly approved or selected.
