@@ -90,3 +90,12 @@ Proceed with Pairs 1, 2, 3, 4 and 6 using the evidence above. Pair 1 has a preli
 **Scope:** Meaning only. The inherited name “The Manipulator”, the Fox animal-symbol review, the Owl concept, the pair opposition and both visual identities remain open. Pair 1 is therefore not complete.
 
 **Next step:** Review the inherited name “The Manipulator” separately. Do not move to animal or visual identity before the relevant conceptual and naming decisions are made.
+
+
+## Latest owner decision — 2026-11-01: Pair 1 naming
+
+The project owner explicitly **rejected “The Manipulator”** as the active name for the Fox archetype. The term moralizes the concept and misrepresents the owner-approved neutral nucleus of astuteness and tactical intelligence by foregrounding one destructive expression.
+
+The replacement remains open. The four owner-supplied candidates — **The Tactician, The Pragmatist, The Opportunist, The Navigator** — have been assessed but none is approved. The current search direction is **tactical ingenuity / adaptive strategic navigation**: reading a system, recognizing leverage points and finding unconventional ways through, around or against constraints. The Tactician is the strongest current semantic base, but its possible lack of irreverence and subversion remains unresolved.
+
+**Next step:** Continue name exploration within this semantic territory. Do not treat any candidate as final, and do not proceed to animal-symbol or visual-identity approval.
