@@ -33,3 +33,19 @@
 - **Status:** “The Manipulator” is rejected and must not be used as the active name for this archetype. No replacement name has been approved.
 - **Scope:** This decision does not change the approved Fox conceptual nucleus, approve the Owl concept, finalize the pair opposition, validate or change the Fox animal symbol, or approve visual identity.
 - **Owner approval:** Explicitly given in the project conversation on 2026-11-01.
+
+
+## 2026-11-01 — Pair 1: inherited name rejected
+
+- **Decision:** The project owner explicitly rejected the inherited name **“The Manipulator”** for the Fox archetype.
+- **Rationale:** The term carries a strongly negative moral implication and names a harmful behaviour rather than the neutral underlying mechanism of astuteness and tactical intelligence. It obscures constructive expressions such as strategic diplomacy, lateral thinking, disruptive innovation and resourceful problem-solving, and risks prompting defensive rejection rather than honest self-recognition in *O Espelho Interior*.
+- **Naming requirement:** The replacement must communicate situational reading, tactical leverage and pragmatic navigation of rules and obstacles while preserving moral ambiguity. It must not imply that the pattern is inherently malicious.
+- **Candidate assessment (none approved):**
+  - **The Tactician:** strongest semantic base for calculation and tactical judgement; may understate irreverence, circumvention and subversion.
+  - **The Pragmatist:** captures practical orientation but may feel sterile and lack narrative tension.
+  - **The Opportunist:** captures rapid recognition of openings but retains a negative moral undertone.
+  - **The Navigator:** captures environmental reading and route-finding but may sound too passive or peaceful for instrumentalizing obstacles.
+- **Further naming direction:** Explore **tactical ingenuity / adaptive strategic navigation** — reading a system, recognizing its leverage points and finding unconventional ways through, around or against its constraints. This is a search direction, not a final name.
+- **Status:** “The Manipulator” is rejected and must not be used as the active name. No replacement name has been approved.
+- **Scope:** This decision does not change the approved Fox conceptual nucleus, approve the Owl concept, finalize the pair opposition, validate or change the Fox animal symbol, or approve visual identity.
+- **Owner approval:** Explicitly given in the project conversation on 2026-11-01.
