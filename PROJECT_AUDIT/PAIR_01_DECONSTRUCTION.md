@@ -344,3 +344,29 @@ The historical sections above remain as review history. Earlier assistant-genera
 ### Next review item
 
 Proceed to the inherited name **“The Manipulator”** under the Name stage. Keep the animal and visual identity pending until their respective stages.
+
+
+## 13. Owner decision — inherited name rejected; naming direction set (2026-11-01)
+
+**Status:** The inherited name **“The Manipulator” is rejected**. The replacement name remains undecided.
+
+The owner determined that the term fails the neutrality test: it foregrounds a morally negative behaviour rather than the approved neutral nucleus of astuteness and tactical intelligence. It obscures constructive expressions such as strategic diplomacy, lateral thinking, disruptive innovation and resourceful problem-solving, and risks defensive rejection before readers can use the archetype for honest self-recognition in *O Espelho Interior*.
+
+This rejects the name, not manipulation as one possible destructive expression of the pattern.
+
+### Candidate review — none approved
+
+| Candidate | What it captures | Limitation |
+|---|---|---|
+| **The Tactician** | Calculation and tactical judgement | May lose irreverence and subversive use of rules |
+| **The Pragmatist** | Practical orientation and efficacy | May feel sterile and lack narrative tension |
+| **The Opportunist** | Rapid recognition of openings | Retains a negative moral undertone |
+| **The Navigator** | Reading the environment and finding a route | May sound too peaceful or passive for instrumentalizing obstacles |
+
+### Naming direction
+
+Explore **tactical ingenuity / adaptive strategic navigation**: reading a system, recognizing its rules and leverage points, and finding unconventional ways through, around or against its constraints — including turning an obstacle into an instrument of advantage.
+
+The Tactician is the strongest of the four current candidates as a semantic base, but it should be enriched with the Fox's adaptive and subversive quality rather than accepted unchanged. This is a search direction, not a proposed final name.
+
+**Limits:** No replacement name is approved. The Fox meaning remains approved; the Owl concept, final pair relationship, animal-symbol validation and visual identity remain open. Do not proceed to animal or visual-identity approval on the assumption that naming is complete.
