@@ -81,7 +81,7 @@ Agreement on this method is not approval of any individual archetype definition.
 
 | Pair | Archetype A | Existing animal A | Archetype B | Existing animal B | Status |
 |---|---|---|---|---|---|
-| 1 | The Manipulator | Fox | The Scholar | Owl | Under deconstruction; owner correction recorded, definitions and relationship still open |
+| 1 | The Manipulator (inherited name; under review) | Fox | The Scholar (inherited name; under review) | Owl | Fox meaning approved 2026-11-01; Owl meaning, opposition, both names, animal review and visual identities remain open |
 | 2 | The Ego | Lion | The Echo | Stag / Deer | Not yet reviewed |
 | 3 | The Consumer | Pig | The Liberated | Eagle | Not yet reviewed |
 | 4 | The Follower | Sheep | The Architect | Spider | Not yet reviewed |
