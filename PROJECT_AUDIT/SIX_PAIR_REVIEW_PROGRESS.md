@@ -81,3 +81,12 @@ An earlier discussion described six passive, six active and one neutral position
 ## Next review sequence
 
 Proceed with Pairs 1, 2, 3, 4 and 6 using the evidence above. Pair 1 has a preliminary conceptual hypothesis to test; Pairs 2, 3, 4 and 6 require concept-level review before names or symbols can be treated as meaningful. Pair 5 remains in progress and should not be declared complete until its concept, name and symbol are resolved.
+
+
+## Latest owner decision — 2026-11-01
+
+**Pair 1 / Fox:** The project owner explicitly approved the Fox conceptual nucleus as **astuteness and tactical intelligence**. The approved meaning includes reading structures and circumstances; identifying opportunities, rules, exceptions and blind spots; calculating risks; navigating, circumventing or subverting rules; and turning obstacles or restrictions into practical leverage. Constructive and destructive expressions are both recognized without making the underlying pattern morally fixed.
+
+**Scope:** Meaning only. The inherited name “The Manipulator”, the Fox animal-symbol review, the Owl concept, the pair opposition and both visual identities remain open. Pair 1 is therefore not complete.
+
+**Next step:** Review the inherited name “The Manipulator” separately. Do not move to animal or visual identity before the relevant conceptual and naming decisions are made.
